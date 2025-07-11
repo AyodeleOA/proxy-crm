@@ -1,0 +1,235 @@
+/* product.css */
+:root {
+    --proxyshades-6: rgba(0, 112, 181, 1);
+    --primary-blue-11: rgba(0, 22, 36, 1);
+    --primary-blue-9: rgba(0, 37, 60, 1);
+    --primary-blue-6: rgba(85, 159, 205, 1);
+    --primary-blue-1: rgba(0, 111, 180, 1);
+    --grey-9: rgba(115, 115, 115, 1);
+    --grey-6: rgba(229, 229, 229, 1);
+    --grey-3: rgba(242, 242, 242, 1);
+    --grey-1: rgba(250, 250, 250, 1);
+    --whites-12: rgba(254, 255, 255, 1);
+    --whites-1: rgba(251, 255, 254, 1);
+    --white-shade1: rgba(254, 255, 255, 1);
+    --text-normal-bold-font-family: "Inter", Helvetica;
+    --main-font: 'Montserrat';
+    --text-normal-bold-font-weight: 700;
+    --text-normal-bold-font-size: 16px;
+    --text-normal-bold-letter-spacing: 0px;
+    --text-normal-bold-line-height: 22.399999618530273px;
+    --text-normal-bold-font-style: normal;
+  }
+
+body {
+    margin: 0;
+    font-family: var(--main-font);
+    background: #f9f9f9;
+  }
+.layout {
+  display: flex;
+  min-height: 100vh;
+}   
+
+.product-container {
+    display: flex;
+    flex-direction: column;
+    width: 82%;
+}
+
+.product-header {
+    padding: 20px;
+    background-image: url('../image/header-bg.png');
+    color: white;
+    position: relative;
+  
+}
+
+.product-header h3 {
+    margin: 0;
+    /* font-family: 'Montserrat'; */
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 64px;
+
+
+    /* identical to box height, or 133% */
+letter-spacing: -0.25px;
+
+/* whites 12 */
+color: #FEFFFF;
+opacity: 0.9;
+text-align: justify;
+
+
+}
+
+.product-header p {
+    margin-top: 10px;
+    /* font-family: 'Montserrat'; */
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    /* identical to box height */
+    letter-spacing: -0.25px;
+    
+    /* whites 12 */
+    color: #FEFFFF;
+    opacity: 0.6;
+    text-align: justify;
+ }
+
+.breadcrumbs {
+    font-size: 0.8rem;
+    opacity: 0.8;
+    flex: none;
+    order: 3;
+    flex-grow: 1;
+    margin-bottom: 2px;
+}
+
+
+.long-slash {
+    display: inline-block;
+    width: 30px; /* Adjust length */
+    height: 1px;
+    background-color:white;
+    transform: rotate(-77deg)  translateY(-4px) translateX(10px); /* Make it look like a slash */
+  }
+  
+.breadcrumbs img{ 
+    width:14px;
+
+}
+
+.search-container {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+
+.search-container input {
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #FEFFFF;
+    width: 532px;
+    height: 40px;
+    background: none;
+    margin-top: 70px;
+    opacity: 0.6;
+}
+ input[type="text"]::placeholder {
+    color: #FEFFFF; /* Placeholder text color */
+    padding-left: 43px
+    
+}
+
+input[type="text"] {
+    color: #FEFFFF; /* Change this to your desired color */
+    padding-left: 43px
+  }
+  
+
+  .search-icon {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 18px;
+    height: 18px;
+    pointer-events: none;
+    opacity: 0.7;
+    margin-top: 35px;
+
+}
+
+.product-main {
+    display: flex;
+    height: calc(100vh - 160px);
+}
+
+.product-sidebar {
+    width: 220px;
+    background-color: #eaeaea;
+    padding: 20px;
+    box-shadow: inset -1px 0 0 #ccc;
+    
+}
+
+.product-sidebar h2 {
+    display: inline;
+}
+
+.add-list {
+    float: right;
+    border: none;
+    background: linear-gradient(94.05deg, #007AFF 21.4%, #67ADF8 74.2%);
+    color: white;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+}
+
+.product-sidebar input,
+.product-sidebar select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+.product-table-section {
+    flex-grow: 1;
+    padding: 20px;
+    overflow-x: auto;
+}
+
+.product-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.product-actions button {
+    padding: 8px 14px;
+    background: white;
+    border-radius: black 1px;
+    color: black;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.product-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
+}
+
+.product-table th,
+.product-table td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.product-table th {
+    background-color: #f1f1f1;
+}
+
+.product-table a {
+    color: #0077cc;
+    text-decoration: none;
+}
+.line{
+    width: 200px;
+  height: 3px; /* or however thick you want the line */
+  background: black;
+  border: none; /* remove default border if using <hr> */
+}

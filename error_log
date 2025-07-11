@@ -1,0 +1,30 @@
+[26-Jan-2025 17:22:27 UTC] PHP Fatal error:  Uncaught Error: Call to a member function Execute() on null in /home/attainablesite/public_html/proxycrm.attainables.net/include/database/PearDatabase.php:273
+Stack trace:
+#0 /home/attainablesite/public_html/proxycrm.attainables.net/include/database/PearDatabase.php(358): PearDatabase->executeSetNamesUTF8SQL()
+#1 /home/attainablesite/public_html/proxycrm.attainables.net/vtlib/Vtiger/Functions.php(161): PearDatabase->pquery()
+#2 /home/attainablesite/public_html/proxycrm.attainables.net/vtlib/Vtiger/Functions.php(205): Vtiger_Functions::getBasicModuleInfo()
+#3 /home/attainablesite/public_html/proxycrm.attainables.net/include/utils/CommonUtils.php(60): Vtiger_Functions::getModuleId()
+#4 /home/attainablesite/public_html/proxycrm.attainables.net/include/utils/VTCacheUtils.php(107): getTabid()
+#5 /home/attainablesite/public_html/proxycrm.attainables.net/include/utils/utils.php(425): VTCacheUtils::lookupFieldInfo_Module()
+#6 /home/attainablesite/public_html/proxycrm.attainables.net/modules/Users/Users.php(145): getColumnFields()
+#7 /home/attainablesite/public_html/proxycrm.attainables.net/data/CRMEntity.php(62): Users->__construct()
+#8 /home/attainablesite/public_html/proxycrm.attainables.net/includes/main/WebUI.php(46): CRMEntity::getInstance()
+#9 /home/attainablesite/public_html/proxycrm.attainables.net/includes/main/WebUI.php(104): Vtiger_WebUI->getLogin()
+#10 /home/attainablesite/public_html/proxycrm.attainables.net/index.php(26): Vtiger_WebUI->process()
+#11 {main}
+  thrown in /home/attainablesite/public_html/proxycrm.attainables.net/include/database/PearDatabase.php on line 273
+[26-Jan-2025 17:22:32 UTC] PHP Fatal error:  Uncaught Error: Call to a member function Execute() on null in /home/attainablesite/public_html/proxycrm.attainables.net/include/database/PearDatabase.php:273
+Stack trace:
+#0 /home/attainablesite/public_html/proxycrm.attainables.net/include/database/PearDatabase.php(358): PearDatabase->executeSetNamesUTF8SQL()
+#1 /home/attainablesite/public_html/proxycrm.attainables.net/vtlib/Vtiger/Functions.php(161): PearDatabase->pquery()
+#2 /home/attainablesite/public_html/proxycrm.attainables.net/vtlib/Vtiger/Functions.php(205): Vtiger_Functions::getBasicModuleInfo()
+#3 /home/attainablesite/public_html/proxycrm.attainables.net/include/utils/CommonUtils.php(60): Vtiger_Functions::getModuleId()
+#4 /home/attainablesite/public_html/proxycrm.attainables.net/include/utils/VTCacheUtils.php(107): getTabid()
+#5 /home/attainablesite/public_html/proxycrm.attainables.net/include/utils/utils.php(425): VTCacheUtils::lookupFieldInfo_Module()
+#6 /home/attainablesite/public_html/proxycrm.attainables.net/modules/Users/Users.php(145): getColumnFields()
+#7 /home/attainablesite/public_html/proxycrm.attainables.net/data/CRMEntity.php(62): Users->__construct()
+#8 /home/attainablesite/public_html/proxycrm.attainables.net/includes/main/WebUI.php(46): CRMEntity::getInstance()
+#9 /home/attainablesite/public_html/proxycrm.attainables.net/includes/main/WebUI.php(104): Vtiger_WebUI->getLogin()
+#10 /home/attainablesite/public_html/proxycrm.attainables.net/index.php(26): Vtiger_WebUI->process()
+#11 {main}
+  thrown in /home/attainablesite/public_html/proxycrm.attainables.net/include/database/PearDatabase.php on line 273

@@ -1,0 +1,30 @@
+:root {
+    --primary-blue-11: rgba(0, 22, 36, 1);
+    --primary-blue-2: rgba(0, 111, 180, 1);
+    --primary-blue-1: rgba(0, 111, 180, 1);
+    --grey-9: rgba(115, 115, 115, 1);
+    --grey-8: rgba(153, 153, 153, 1);
+    --grey-3: rgba(242, 242, 242, 1);
+    --whites-12: rgba(254, 255, 255, 1);
+    --whites-1: rgba(251, 255, 254, 1);
+    --color-white: rgba(255, 255, 255, 1);
+    --white-shade1: rgba(254, 255, 255, 1);
+    --montserrat-regular-body-2-font-family: "Montserrat", Helvetica;
+    --montserrat-regular-body-2-font-weight: 400;
+    --montserrat-regular-body-2-font-size: 16px;
+    --montserrat-regular-body-2-letter-spacing: 0px;
+    --montserrat-regular-body-2-line-height: 24px;
+    --montserrat-regular-body-2-font-style: normal;
+    --text-normal-bold-font-family: "Inter", Helvetica;
+    --text-normal-bold-font-weight: 700;
+    --text-normal-bold-font-size: 16px;
+    --text-normal-bold-letter-spacing: 0px;
+    --text-normal-bold-line-height: 22.399999618530273px;
+    --text-normal-bold-font-style: normal;
+    --text-small-bold-font-family: "Inter", Helvetica;
+    --text-small-bold-font-weight: 700;
+    --text-small-bold-font-size: 14px;
+    --text-small-bold-letter-spacing: 0px;
+    --text-small-bold-line-height: 19.600000381469727px;
+    --text-small-bold-font-style: normal;
+}

@@ -1,0 +1,182 @@
+{*+**********************************************************************************
+ * The contents of this file are subject to the vtiger CRM Public License Version 1.1
+ * ("License"); You may not use this file except in compliance with the License
+ * The Original Code is: vtiger CRM Open Source
+ * The Initial Developer of the Original Code is vtiger.
+ * Portions created by vtiger are Copyright (C) vtiger.
+ * All Rights Reserved.
+ ************************************************************************************}
+{strip}
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>{vtranslate($PAGETITLE, $QUALIFIED_MODULE)}</title>
+        <link rel="SHORTCUT ICON" href="layouts/v7/skins/images/favicon.ico">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+		<link type='text/css' rel='stylesheet' href='{vresource_url("libraries/bootstrap-legacy/css/bootstrap-responsive.min.css")}'> {* .row-fluid... *}
+		<link type='text/css' rel='stylesheet' href='{vresource_url("layouts/v7/lib/todc/css/bootstrap.min.css")}'>
+		<link type='text/css' rel='stylesheet' href='{vresource_url("layouts/v7/lib/todc/css/docs.min.css")}'>
+		<link type='text/css' rel='stylesheet' href='{vresource_url("layouts/v7/lib/todc/css/todc-bootstrap.min.css")}'>
+		<link type='text/css' rel='stylesheet' href='{vresource_url("layouts/v7/lib/font-awesome/css/font-awesome.min.css")}'>
+        <link type='text/css' rel='stylesheet' href='{vresource_url("layouts/v7/lib/jquery/select2/select2.css")}'>
+        <link type='text/css' rel='stylesheet' href='{vresource_url("layouts/v7/lib/select2-bootstrap/select2-bootstrap.css")}'>
+        <link type='text/css' rel='stylesheet' href='{vresource_url("libraries/bootstrap/js/eternicode-bootstrap-datepicker/css/datepicker3.css")}'>
+        <link type='text/css' rel='stylesheet' href='{vresource_url("layouts/v7/lib/jquery/jquery-ui-1.12.0.custom/jquery-ui.css")}'>
+        <link type='text/css' rel='stylesheet' href='{vresource_url("layouts/v7/lib/vt-icons/style.css")}'>
+        <link type='text/css' rel='stylesheet' href='{vresource_url("layouts/v7/lib/animate/animate.min.css")}'>
+        <link type='text/css' rel='stylesheet' href='{vresource_url("layouts/v7/lib/jquery/malihu-custom-scrollbar/jquery.mCustomScrollbar.css")}'>
+        <link type='text/css' rel='stylesheet' href='{vresource_url("layouts/v7/lib/jquery/jquery.qtip.custom/jquery.qtip.css")}'>
+        <link type='text/css' rel='stylesheet' href='{vresource_url("layouts/v7/lib/jquery/daterangepicker/daterangepicker.css")}'>
+		
+		<!-- New css-->
+		{if $MODULE eq 'Users' && $VIEW eq 'Login'}
+			<link type='text/css' rel='stylesheet' href='{vresource_url("layouts/v7/lib/newui/css/login.css")}'>
+			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+			
+		{else}
+			  <link rel="stylesheet" href="{vresource_url("layouts/v7/lib/newui/css/dashboard.css")}'>
+			  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+			  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-xxz7cY3rGt9hrQjM9vb9ADf6D6SH1a8lALo0OyOPJ2WwHgCXLzqkWdKk1q4zKKhWQG+lEOszn8I+Zy4D2fPqCQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+			  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+		{/if}
+		
+		
+        
+        <input type="hidden" id="inventoryModules" value={ZEND_JSON::encode($INVENTORY_MODULES)}>
+        {if isset($SELECTED_MENU_CATEGORY)}
+        {assign var=V7_THEME_PATH value=Vtiger_Theme::getv7AppStylePath($SELECTED_MENU_CATEGORY)}
+        {/if}
+        {if strpos($V7_THEME_PATH,".less")!== false}
+            <link type="text/css" rel="stylesheet/less" href="{vresource_url($V7_THEME_PATH)}" media="screen" />
+        {else}
+            <link type="text/css" rel="stylesheet" href="{vresource_url($V7_THEME_PATH)}" media="screen" />
+        {/if}
+        
+        {foreach key=index item=cssModel from=$STYLES}
+			<link type="text/css" rel="{$cssModel->getRel()}" href="{vresource_url($cssModel->getHref())}" media="{$cssModel->getMedia()}" />
+		{/foreach}
+
+		{* For making pages - print friendly *}
+		<style type="text/css">
+            @media print {
+            .noprint { display:none; }
+		}
+		</style>
+		<script type="text/javascript">var __pageCreationTime = (new Date()).getTime();</script>
+		<script src="{vresource_url('layouts/v7/lib/jquery/jquery.min.js')}"></script>
+		<script src="{vresource_url('layouts/v7/lib/jquery/jquery-migrate-1.4.1.js')}"></script>
+		<script type="text/javascript">
+			var _META = { 'module': "{$MODULE}", view: "{$VIEW}", 'parent': "{$PARENT_MODULE}", 'notifier':"{$NOTIFIER_URL}", 'app':"{if isset($SELECTED_MENU_CATEGORY)} {$SELECTED_MENU_CATEGORY}{/if}" };
+            {if $EXTENSION_MODULE}
+                var _EXTENSIONMETA = { 'module': "{$EXTENSION_MODULE}", view: "{$EXTENSION_VIEW}"};
+            {/if}
+            var _USERMETA;
+            {if $CURRENT_USER_MODEL}
+               _USERMETA =  { 'id' : "{$CURRENT_USER_MODEL->get('id')}", 'menustatus' : "{$CURRENT_USER_MODEL->get('leftpanelhide')}", 
+                              'currency' : "{decode_html($USER_CURRENCY_SYMBOL)}", 'currencySymbolPlacement' : "{$CURRENT_USER_MODEL->get('currency_symbol_placement')}",
+                          'currencyGroupingPattern' : "{$CURRENT_USER_MODEL->get('currency_grouping_pattern')}", 'truncateTrailingZeros' : "{$CURRENT_USER_MODEL->get('truncate_trailing_zeros')}",'userlabel':"{($CURRENT_USER_MODEL->get('userlabel'))|escape:html}",};
+            {/if}
+		</script>
+	</head>
+	 {assign var=CURRENT_USER_MODEL value=Users_Record_Model::getCurrentUserModel()}
+	 
+	<body data-skinpath="{Vtiger_Theme::getBaseThemePath()}" data-language="{$LANGUAGE}" data-user-decimalseparator="{$CURRENT_USER_MODEL->get('currency_decimal_separator')}" data-user-dateformat="{$CURRENT_USER_MODEL->get('date_format')}"
+          data-user-groupingseparator="{$CURRENT_USER_MODEL->get('currency_grouping_separator')}" data-user-numberofdecimals="{$CURRENT_USER_MODEL->get('no_of_currency_decimals')}" data-user-hourformat="{$CURRENT_USER_MODEL->get('hour_format')}"
+          data-user-calendar-reminder-interval="{$CURRENT_USER_MODEL->getCurrentUserActivityReminderInSeconds()}">
+           <input type="hidden" id="start_day" value="{$CURRENT_USER_MODEL->get('dayoftheweek')}" /> 
+		 
+		 <div class="layout">
+			<div class="container">
+		<!-- <div id="page"> -->
+            <div id="pjaxContainer" class="hide noprint"></div>
+            <div id="messageBar" class="hide"></div>
+		
+		 
+		{if $MODULE eq 'Users' && $VIEW eq 'Login'}
+			
+		{else}
+					<!-- Sidebar -->
+					<aside class="sidebar">
+					  <div class="Sidebar_container">
+					  <div class="sidebar-header">
+						<img src="./image/PROXYNET LOGO NEW LOGO 2.png" alt="Proxynet" class="logo"/><img src="./image/Vector (13).png" alt="" width="30px" class="logo2">
+					  </div>
+
+					  <div class="search-bar">
+						<img src="./image/Vector@3x.png" alt="Search" class="search-icon" />
+						<input type="text" placeholder="Search..." />
+					  </div>
+							
+					  <nav class="menu1">
+						<ul>
+						  <li><img src="./image/Vector.png" alt=""> Dashboard</li>
+						  <li class="expandable" id="menuItem">
+							<img src="./image/Vector (1).png" alt=""> Inventory
+							<ul class="sub-menu" id="submenu">
+							  <li class="submenu-heading"><h2>Inventory</h2> <hr></li>
+							  <li><i class="fa-solid fa-bag-shopping"></i> 
+								<a href="product.html" style="color: black; text-decoration: none;">Products</a>
+							  </li>
+							  <li><i class="fa-solid fa-gears"></i> Services</li>
+								<li><i class="fa-solid fa-tags"></i> Price Books</li>
+								<li><i class="fa-solid fa-file-invoice-dollar"></i> Invoices</li>
+								<li><i class="fa-solid fa-clipboard-check"></i> Sales Orders</li>
+								<li><i class="fa-solid fa-tag"></i> Purchase Orders</li>
+								<li><i class="fa-solid fa-user"></i> Vendors</li>
+								<li><i class="fa-solid fa-address-book"></i> Contacts</li>
+								<li><i class="fa-solid fa-building"></i> Organizations</li>
+							</ul>
+						  </li>
+						  <li><img src="./image/Vector (2).png" alt=""> Sales</li>
+						  <li><img src="./image/Vector (4).png" alt=""> Marketing</li>
+						  <li><img src="./image/Vector (5).png" alt=""> Support</li>
+						  <li><img src="./image/Vector (6).png" alt=""> Project</li>
+						  <li><img src="./image/clarity_tools-solid.png" alt=""> Tools</li>
+						</ul>
+					  </nav>
+
+					  
+
+						<!-- Dropdown Section -->
+						<div class="menu-section">
+						  <div class="dropdown-toggle">
+							<span class="dropdown-icon">▼ More resources</span>
+						  </div>
+						  <ul class="dropdown-menu">
+							<li><img src="./image/Vector (9).png" alt=""> Mail manager</li>
+							<li><img src="./image/Vector (10).png" alt=""> Documents</li>
+							<li><img src="./image/Vector (11).png" alt=""> Extension store</li>
+							<li><img src="./image/Vector (12).png" alt=""> Settings</li>
+						  </ul>
+						</div>
+					 </di
+
+						<!-- Spacer to push icons to the bottom -->
+						<!-- <div style="flex-grow: 1;"></div> -->
+					  
+						<!-- Icon Bar (Always visible at the bottom) -->
+						<div class="frame-10">
+						  <div class="frame-11">
+							<img class="mingcute-send-fill" src="https://c.animaapp.com/ma2f9rofdZW58f/img/flat-color-icons-plus.png" />
+							<img class="mingcute-send-fill" src="https://c.animaapp.com/ma2f9rofdZW58f/img/lsicon-list-filled.svg" />
+							<img class="mingcute-send-fill" src="https://c.animaapp.com/ma2f9rofdZW58f/img/mdi-leads.svg" />
+							<img class="mingcute-send-fill" src="https://c.animaapp.com/ma2f9rofdZW58f/img/solar-calendar-bold.svg" />
+							<div class="staff">
+							  <div class="frame-9">
+								<img src="https://via.placeholder.com/40x40.png?text=U" alt="User Profile" style="border-radius: 50%; width: 40px; height: 40px;">
+							  </div>
+							</div>
+						  </div>
+						</div>
+					  
+					
+					  
+					  </aside>
+					 
+
+					<!-- Main content -->
+					<main class="main-content">
+					
+			

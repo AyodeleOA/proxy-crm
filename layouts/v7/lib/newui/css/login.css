@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  body, html {
+    height: 100%;
+    background: url('../image/flat-lay-photo-office-desk-with-laptop-copy-space-background\ 1-2.png') no-repeat center center fixed;
+    background-size: cover;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  
+  .login-box {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 40px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .login-box h2 {
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .login-box p {
+    margin-bottom: 25px;
+    color: #555;
+    font-size: 14px;
+    line-height: 1.4;
+  }
+  
+  form label {
+    display: block;
+    margin: 10px 0 5px;
+    color: #333;
+  }
+  
+  input[type="email"],
+  input[type="password"] {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1.5px solid #a3c1d1;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    outline: none;
+  }
+  
+  .password-wrapper {
+    position: relative;
+  }
+  
+  .password-wrapper .eye-icon {
+    position: absolute;
+    right: 12px;
+    top: 10px;
+    cursor: pointer;
+  }
+  
+  .options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+  
+  .options a {
+    color: #1a73e8;
+    text-decoration: none;
+  }
+  
+  button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    background-color: #1a73e8;
+    color: white;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  footer {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 12px;
+    color: #aaa;
+  }
+
+  .password-wrapper {
+  position: relative;
+}
+
+.eye-icon {
+  position: absolute;
+  top: 50%;
+  right: 12px;
+  transform: translateY(-20%);
+  cursor: pointer;
+  color: #888;
+  transition: color 0.3s ease;
+}
+
+.eye-icon.active {
+  color: #1a73e8; /* blue */
+}
+
+input[type="password"],
+input[type="text"] {
+  width: 100%; /* or a fixed width like 250px */
+  box-sizing: border-box;
+  font-family: inherit; /* Ensures font doesn’t change */
+  padding: 10px;
+}
+.password-container {
+  position: relative;
+  display: inline-block;
+}
+
+
+
+
+  
