@@ -15,7 +15,7 @@
         <input class="yAxisFieldType" type="hidden" value="{if isset($YAXIS_FIELD_TYPE)}$YAXIS_FIELD_TYPE{/if}" />
         <div class="row" style="margin:0px 10px;">
             <div class="col-lg-11">
-                <div class="widgetChartContainer" name='chartcontent' style="height:220px;min-width:300px; margin: 0 auto"></div>
+                <div class="widgetChartContainer" name='chartcontent' ></div>
                 <br>
             </div>
 			<div class="col-lg-1"></div>

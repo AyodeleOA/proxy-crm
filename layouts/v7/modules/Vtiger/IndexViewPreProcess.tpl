@@ -48,7 +48,7 @@
 				
 					
 				
-				<h4 class="module-title pull-left  text-white"> {vtranslate($MODULE, $MODULE)} </h4>&nbsp;&nbsp;</a>
+				<h4 class="module-title pull-left  text-white"> {vtranslate($MODULE, $MODULE)}  </h4>&nbsp;&nbsp;</a>
 				
 				<p class="current-filter-name filter-name pull-left cursorPointer" title="{$CVNAME}">
 					<span class="long-slash">/</span>

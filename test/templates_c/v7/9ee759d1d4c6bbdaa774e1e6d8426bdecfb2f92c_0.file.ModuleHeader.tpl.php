@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.5.4, created on 2025-05-28 18:05:09
+/* Smarty version 4.5.4, created on 2025-07-15 11:23:22
   from 'C:\xampp\htdocs\proxy-crm\layouts\v7\modules\Vtiger\ModuleHeader.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.5.4',
-  'unifunc' => 'content_68375055e029e2_96162923',
+  'unifunc' => 'content_68763a2a5b09a2_08781213',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '9ee759d1d4c6bbdaa774e1e6d8426bdecfb2f92c' => 
     array (
       0 => 'C:\\xampp\\htdocs\\proxy-crm\\layouts\\v7\\modules\\Vtiger\\ModuleHeader.tpl',
-      1 => 1748455505,
+      1 => 1752437527,
       2 => 'file',
     ),
   ),
@@ -20,12 +20,12 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_68375055e029e2_96162923 (Smarty_Internal_Template $_smarty_tpl) {
+function content_68763a2a5b09a2_08781213 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_checkPlugins(array(0=>array('file'=>'C:\\xampp\\htdocs\\proxy-crm\\vendor\\smarty\\smarty\\libs\\plugins\\modifier.count.php','function'=>'smarty_modifier_count',),));
 ?>
 
 <div class="col-sm-12 col-xs-11 padding1 module-action-bar clearfix coloredBorderTop"><div class="module-action-content clearfix <?php echo $_smarty_tpl->tpl_vars['MODULE']->value;?>
--module-action-content"><div class="col-lg-12 col-md-6 col-sm-7 col-xs-1 padding0 pull-right"><div id="appnav" class="navbar-right"><nav class="navbar navbar-inverse border0 margin0"><?php if (smarty_modifier_count($_smarty_tpl->tpl_vars['MODULE_BASIC_ACTIONS']->value) > 0) {?><div class="container-fluid"><div class="navbar-header bg-white marginTop5px"><button type="button" class="navbar-toggle collapsed margin0" data-toggle="collapse" data-target="#appnavcontent" aria-expanded="false"><i class="fa fa-ellipsis-v"></i></button></div><div class="navbar-collapse collapse" id="appnavcontent" aria-expanded="false" style="height: 1px;"><ul class="nav navbar-nav"><?php
+-module-action-content"><div class="col-lg-12 col-md-6 col-sm-12 col-xs-1 padding0 pull-right"><div id="appnav" class=""><nav class="navbar navbar-inverse navbar-rightt border0 margin0"><?php if (smarty_modifier_count($_smarty_tpl->tpl_vars['MODULE_BASIC_ACTIONS']->value) > 0) {?><div class="container-fluid "><div class="navbar-header bg-white marginTop5px"><button type="button" class="navbar-toggle collapsed margin0" data-toggle="collapse" data-target="#appnavcontent" aria-expanded="false"><i class="fa fa-ellipsis-v"></i></button></div><div class="navbar-collapse collapse navbar-right" id="appnavcontent" aria-expanded="false" style="height: 1px;"><ul class="nav navbar-nav"><?php
 $_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['MODULE_BASIC_ACTIONS']->value, 'BASIC_ACTION');
 $_smarty_tpl->tpl_vars['BASIC_ACTION']->do_else = true;
 if ($_from !== null) foreach ($_from as $_smarty_tpl->tpl_vars['BASIC_ACTION']->value) {

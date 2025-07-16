@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 4.5.4, created on 2025-05-26 12:54:42
+/* Smarty version 4.5.4, created on 2025-07-15 21:01:42
   from 'C:\xampp\htdocs\proxy-crm\layouts\v7\modules\Users\Login.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.5.4',
-  'unifunc' => 'content_6834649275d946_04324982',
+  'unifunc' => 'content_6876c1b60f1fb7_65270060',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_6834649275d946_04324982 (Smarty_Internal_Template $_smarty_tpl) {
+function content_6876c1b60f1fb7_65270060 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <style>#page {padding-top: 0px;height: inherit;}.failureMessage {color: red;display: block;text-align: center;}.successMessage {color: green;display: block;text-align: center;padding: 0px 0px 10px;}</style><div class="container"><div class="login-box" ><div id="loginFormDiv"><h2>Welcome back 👋</h2><p>Let's get your day started. It's your day to shine.<br>Sign in and get started on your projects.</p><div><span class="<?php if (!$_smarty_tpl->tpl_vars['ERROR']->value) {?>hide<?php }?> failureMessage" id="validationMessage"><?php $_smarty_tpl->_assignInScope('MESSid', 'AGE');?></span><span class="<?php if (!$_smarty_tpl->tpl_vars['MAIL_STATUS']->value) {?>hide<?php }?> successMessage"><?php echo $_smarty_tpl->tpl_vars['MESSAGE']->value;?>
 </span></div><form id="loginForm" class="form-horizontal" method="POST" action="index.php"><input type="hidden" name="module" value="Users"/><input type="hidden" name="action" value="Login"/><label>Email</label><input type="text" id="username" type="text" name="username" placeholder="Username" required /><label>Password</label><div class="password-wrapper"><input type="password" name="password" id="password" placeholder="Enter your password" required /><span class="eye-icon" id="togglePassword"><i class="fa-solid fa-eye" id="eyeIcon"></i></span></div><div class="options"><label><input type="checkbox" checked /> Remember Me</label><a class="forgotPasswordLink">Forgot Password?</a></div><?php $_smarty_tpl->_assignInScope('CUSTOM_SKINS', Vtiger_Theme::getAllSkins());

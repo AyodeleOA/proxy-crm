@@ -14,7 +14,7 @@ $languageStrings = array(
 	'POWEREDBY'=> 'Powered by Proxynet Communications Limiited',
 	'LBL_READ_LICENSE' => 'Read License',
 	'LBL_PRIVACY_POLICY' => 'Privacy Policy',
-
+	'LBL_CALL CENTER' => 'CALL CENTER',
 	// Common Actions
 	'LBL_NEW' => 'New',
 	'LBL_LINKED' => 'Linked',

@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 4.5.4, created on 2025-05-26 11:13:17
+/* Smarty version 4.5.4, created on 2025-07-15 11:23:22
   from 'C:\xampp\htdocs\proxy-crm\layouts\v7\modules\Vtiger\Pagination.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.5.4',
-  'unifunc' => 'content_68344ccdd085d2_96483313',
+  'unifunc' => 'content_68763a2a6d52e6_63250532',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_68344ccdd085d2_96483313 (Smarty_Internal_Template $_smarty_tpl) {
+function content_68763a2a6d52e6_63250532 (Smarty_Internal_Template $_smarty_tpl) {
 if (!$_smarty_tpl->tpl_vars['CLASS_VIEW_ACTION']->value) {?>
     <?php $_smarty_tpl->_assignInScope('CLASS_VIEW_ACTION', 'listViewActions');?>
     <?php $_smarty_tpl->_assignInScope('CLASS_VIEW_PAGING_INPUT', 'listViewPagingInput');?>

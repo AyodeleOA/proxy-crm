@@ -1,8 +1,0 @@
-Traced on 2025-04-07 12:53:13
-FileAccessForInclusion - 
-C:\xampp\htdocs\proxy-crm\include\utils\CommonUtils.php::checkFileAccessForInclusion::388<br>
-C:\xampp\htdocs\proxy-crm\includes\Loader.php::checkFileAccessForInclusion::65<br>
-C:\xampp\htdocs\proxy-crm\includes\Loader.php::includeOnce::191<br>
-C:\xampp\htdocs\proxy-crm\includes\main\WebUI.php::vimport::15<br>
-C:\xampp\htdocs\proxy-crm\index.php::include_once::24<br>
-

@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.5.4, created on 2025-06-10 12:29:14
+/* Smarty version 4.5.4, created on 2025-07-15 09:01:14
   from 'C:\xampp\htdocs\proxy-crm\layouts\v7\modules\Vtiger\dashboards\DashBoardContents.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.5.4',
-  'unifunc' => 'content_6848251a133256_36789234',
+  'unifunc' => 'content_687618da38ca01_65174098',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '8fa2148b7f45abc384fe970599cedb17d0f6be0f' => 
     array (
       0 => 'C:\\xampp\\htdocs\\proxy-crm\\layouts\\v7\\modules\\Vtiger\\dashboards\\DashBoardContents.tpl',
-      1 => 1749558550,
+      1 => 1752529534,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_6848251a133256_36789234 (Smarty_Internal_Template $_smarty_tpl) {
+function content_687618da38ca01_65174098 (Smarty_Internal_Template $_smarty_tpl) {
 ?>    
 <div class="headerr"><div class="header-background"><img src='<?php echo vresource_url("layouts/v7/lib/newui/css/image/header-banner.png");?>
 ' alt="Header Background" class="header-img" /><div class="header-content"><h1>Welcome, <?php echo $_smarty_tpl->tpl_vars['USER_MODEL']->value->get('user_name');?>
@@ -48,9 +48,9 @@ $_smarty_tpl->tpl_vars['TAB_DATA']->do_else = true;
 if ($_from !== null) foreach ($_from as $_smarty_tpl->tpl_vars['index']->value => $_smarty_tpl->tpl_vars['TAB_DATA']->value) {
 $_smarty_tpl->tpl_vars['TAB_DATA']->do_else = false;
 ?><div id="tab_<?php echo $_smarty_tpl->tpl_vars['TAB_DATA']->value["id"];?>
-" data-tabid="<?php echo $_smarty_tpl->tpl_vars['TAB_DATA']->value["id"];?>
-" data-tabname="<?php echo $_smarty_tpl->tpl_vars['TAB_DATA']->value["tabname"];?>
-" class="ml-5 tab-pane fade <?php if ($_smarty_tpl->tpl_vars['TAB_DATA']->value["id"] == $_smarty_tpl->tpl_vars['SELECTED_TAB']->value) {?>in active<?php }?>"><?php if ($_smarty_tpl->tpl_vars['TAB_DATA']->value["id"] == $_smarty_tpl->tpl_vars['SELECTED_TAB']->value) {
+"data-tabid="<?php echo $_smarty_tpl->tpl_vars['TAB_DATA']->value["id"];?>
+"data-tabname="<?php echo $_smarty_tpl->tpl_vars['TAB_DATA']->value["tabname"];?>
+" class="ml-0 tab-pane fade <?php if ($_smarty_tpl->tpl_vars['TAB_DATA']->value["id"] == $_smarty_tpl->tpl_vars['SELECTED_TAB']->value) {?>in active<?php }?>"><?php if ($_smarty_tpl->tpl_vars['TAB_DATA']->value["id"] == $_smarty_tpl->tpl_vars['SELECTED_TAB']->value) {
 $_smarty_tpl->_subTemplateRender(call_user_func_array($_smarty_tpl->registered_plugins[ 'modifier' ][ 'vtemplate_path' ][ 0 ], array( "dashboards/DashBoardTabContents.tpl",$_smarty_tpl->tpl_vars['MODULE']->value )), $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array('TABID'=>$_smarty_tpl->tpl_vars['TABID']->value), 0, true);
 }?></div><?php
 }

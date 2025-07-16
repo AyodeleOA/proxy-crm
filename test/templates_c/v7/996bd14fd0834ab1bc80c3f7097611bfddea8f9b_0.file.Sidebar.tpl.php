@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 4.5.4, created on 2025-05-26 11:16:19
+/* Smarty version 4.5.4, created on 2025-07-15 09:27:34
   from 'C:\xampp\htdocs\proxy-crm\layouts\v7\modules\Settings\Vtiger\Sidebar.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.5.4',
-  'unifunc' => 'content_68344d836d2749_56426073',
+  'unifunc' => 'content_68761f06c29e65_49757318',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -21,7 +21,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:modules/Users/UsersSidebar.tpl' => 1,
   ),
 ),false)) {
-function content_68344d836d2749_56426073 (Smarty_Internal_Template $_smarty_tpl) {
+function content_68761f06c29e65_49757318 (Smarty_Internal_Template $_smarty_tpl) {
 if ($_smarty_tpl->tpl_vars['USER_MODEL']->value->isAdminUser()) {
 $_smarty_tpl->_assignInScope('SETTINGS_MODULE_MODEL', Settings_Vtiger_Module_Model::getInstance());
 $_smarty_tpl->_assignInScope('SETTINGS_MENUS', $_smarty_tpl->tpl_vars['SETTINGS_MODULE_MODEL']->value->getMenus());?><div class="settingsgroup"><div><input type="text" placeholder="<?php echo vtranslate('LBL_SEARCH_FOR_SETTINGS',$_smarty_tpl->tpl_vars['QUALIFIED_MODULE']->value);?>
@@ -67,12 +67,12 @@ _menuItem" data-id="<?php echo $_smarty_tpl->tpl_vars['MENUITEM']->value->getId(
 "data-unpintitle="<?php echo vtranslate('LBL_UNPIN',$_smarty_tpl->tpl_vars['QUALIFIED_MODULE']->value);?>
 "data-pinimageurl="<?php ob_start();
 echo vimage_path('pin.png');
-$_prefixVariable8 = ob_get_clean();
-echo $_prefixVariable8;?>
+$_prefixVariable1 = ob_get_clean();
+echo $_prefixVariable1;?>
 "data-unpinimageurl="<?php ob_start();
 echo vimage_path('unpin.png');
-$_prefixVariable9 = ob_get_clean();
-echo $_prefixVariable9;?>
+$_prefixVariable2 = ob_get_clean();
+echo $_prefixVariable2;?>
 "<?php if ($_smarty_tpl->tpl_vars['MENUITEM']->value->isPinned()) {?>title="<?php echo vtranslate('LBL_UNPIN',$_smarty_tpl->tpl_vars['QUALIFIED_MODULE']->value);?>
 " src="<?php echo vimage_path('unpin.png');?>
 " data-action="unpin"<?php } else { ?>title="<?php echo vtranslate('LBL_PIN',$_smarty_tpl->tpl_vars['QUALIFIED_MODULE']->value);?>

@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 4.5.4, created on 2025-05-29 10:45:38
+/* Smarty version 4.5.4, created on 2025-07-16 08:37:51
   from 'C:\xampp\htdocs\proxy-crm\layouts\v7\modules\HelpDesk\SummaryViewWidgets.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.5.4',
-  'unifunc' => 'content_68383ad25c7f18_45120720',
+  'unifunc' => 'content_687764df811678_14596746',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_68383ad25c7f18_45120720 (Smarty_Internal_Template $_smarty_tpl) {
+function content_687764df811678_14596746 (Smarty_Internal_Template $_smarty_tpl) {
 $_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['DETAILVIEW_LINKS']->value['DETAILVIEWWIDGET'], 'DETAIL_VIEW_WIDGET');
 $_smarty_tpl->tpl_vars['DETAIL_VIEW_WIDGET']->do_else = true;
 if ($_from !== null) foreach ($_from as $_smarty_tpl->tpl_vars['DETAIL_VIEW_WIDGET']->value) {

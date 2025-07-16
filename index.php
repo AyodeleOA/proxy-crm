@@ -1,5 +1,9 @@
 <?php
 
+ini_set('display_errors', '1');
+ini_set('display_startup_errors', '1');
+error_reporting(E_ALL);
+
 /*+**********************************************************************************
  * The contents of this file are subject to the vtiger CRM Public License Version 1.1
  * ("License"); You may not use this file except in compliance with the License
@@ -24,4 +28,6 @@ include_once 'vtlib/Vtiger/Module.php';
 include_once 'includes/main/WebUI.php';
 
 $webUI = new Vtiger_WebUI();
+
 $webUI->process(new Vtiger_Request($_REQUEST, $_REQUEST));
+//var_dump($webUI); exit;

@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.5.4, created on 2025-04-07 12:55:41
+/* Smarty version 4.5.4, created on 2025-07-15 09:01:15
   from 'C:\xampp\htdocs\proxy-crm\layouts\v7\modules\Vtiger\dashboards\WidgetHeader.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.5.4',
-  'unifunc' => 'content_67f3cb4d1e55f0_57670634',
+  'unifunc' => 'content_687618db601710_57217108',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'd1cec6c0257984b4d3300c14d92a698db717a297' => 
     array (
       0 => 'C:\\xampp\\htdocs\\proxy-crm\\layouts\\v7\\modules\\Vtiger\\dashboards\\WidgetHeader.tpl',
-      1 => 1727638512,
+      1 => 1752516515,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_67f3cb4d1e55f0_57670634 (Smarty_Internal_Template $_smarty_tpl) {
+function content_687618db601710_57217108 (Smarty_Internal_Template $_smarty_tpl) {
 $_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['STYLES']->value, 'cssModel', false, 'index');
 $_smarty_tpl->tpl_vars['cssModel']->do_else = true;
 if ($_from !== null) foreach ($_from as $_smarty_tpl->tpl_vars['index']->value => $_smarty_tpl->tpl_vars['cssModel']->value) {
@@ -43,6 +43,6 @@ echo '<script'; ?>
 ><?php
 }
 $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?><div class="title clearfix"><div class="dashboardTitle" title="<?php echo vtranslate($_smarty_tpl->tpl_vars['WIDGET']->value->getTitle(),$_smarty_tpl->tpl_vars['MODULE_NAME']->value);?>
-" style="width: 25em;"><b><?php echo htmlspecialchars((string)vtranslate($_smarty_tpl->tpl_vars['WIDGET']->value->getTitle(),$_smarty_tpl->tpl_vars['MODULE_NAME']->value), ENT_QUOTES, 'UTF-8', true);?>
+" ><b><?php echo htmlspecialchars((string)vtranslate($_smarty_tpl->tpl_vars['WIDGET']->value->getTitle(),$_smarty_tpl->tpl_vars['MODULE_NAME']->value), ENT_QUOTES, 'UTF-8', true);?>
 </b></div></div><?php }
 }

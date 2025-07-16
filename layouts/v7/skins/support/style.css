@@ -149,7 +149,7 @@ body > .mCSB_inside > .mCSB_container {
   }
   .main-container .sidebar-essentials {
     display: inline-block;
-    width: 240px;
+    /* width: 240px; */
     z-index: 1;
     position: absolute;
     bottom: 0;

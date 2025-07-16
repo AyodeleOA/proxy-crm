@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 4.5.4, created on 2025-05-26 16:07:15
+/* Smarty version 4.5.4, created on 2025-07-15 09:01:17
   from 'C:\xampp\htdocs\proxy-crm\layouts\v7\modules\Leads\dashboards\LeadsByStatus.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.5.4',
-  'unifunc' => 'content_683491b3037ef3_60686542',
+  'unifunc' => 'content_687618dd31f0e8_35355516',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_683491b3037ef3_60686542 (Smarty_Internal_Template $_smarty_tpl) {
+function content_687618dd31f0e8_35355516 (Smarty_Internal_Template $_smarty_tpl) {
 echo '<script'; ?>
  type="text/javascript">
 	Vtiger_Barchat_Widget_Js('Vtiger_LeadsByStatus_Widget_Js',{},{});

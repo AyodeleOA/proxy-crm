@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 4.5.4, created on 2025-05-28 15:44:00
+/* Smarty version 4.5.4, created on 2025-07-15 09:01:18
   from 'C:\xampp\htdocs\proxy-crm\layouts\v7\modules\Leads\dashboards\LeadsByIndustry.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.5.4',
-  'unifunc' => 'content_68372f40e8b8e2_47087803',
+  'unifunc' => 'content_687618ded3f2c4_43266204',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_68372f40e8b8e2_47087803 (Smarty_Internal_Template $_smarty_tpl) {
+function content_687618ded3f2c4_43266204 (Smarty_Internal_Template $_smarty_tpl) {
 echo '<script'; ?>
  type="text/javascript">
 	Vtiger_Barchat_Widget_Js('Vtiger_LeadsByIndustry_Widget_Js',{},{});

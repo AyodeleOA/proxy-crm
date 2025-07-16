@@ -1843,9 +1843,10 @@ Should any need arise,please do give us a call.';
 		$this->db->query("insert into vtiger_parenttab values (3,'Sales',3,0)");
 		$this->db->query("insert into vtiger_parenttab values (4,'Support',4,0)");
 		$this->db->query("insert into vtiger_parenttab values (5,'Analytics',5,0)");
-		$this->db->query("insert into vtiger_parenttab values (6,'Inventory',6,0)");
+		$this->db->query("insert into vtiger_parenttab values (6,'Call Center',6,0)");
 		$this->db->query("insert into vtiger_parenttab values (7,'Tools',7,0)");
 		$this->db->query("insert into vtiger_parenttab values (8,'Settings',8,0)");
+		$this->db->query("insert into vtiger_parenttab values (9,'Inventory',9,0)");
 
 		$this->db->query("insert into vtiger_parenttabrel values (1,9,2)");
 		$this->db->query("insert into vtiger_parenttabrel values (1,28,4)");

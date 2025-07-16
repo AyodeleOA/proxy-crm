@@ -59,6 +59,7 @@
 								<div class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true">
 									<a href="#" id="menubar_quickCreate" class="qc-button fa fa-plus-circle" title="{vtranslate('LBL_QUICK_CREATE',$MODULE)}" aria-hidden="true"></a>
 								</div>
+								
 								<ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1" style="width:500px;">
 									<li class="title" style="padding: 5px 0 0 15px;">
 										<strong>{vtranslate('LBL_QUICK_CREATE',$MODULE)}</strong>

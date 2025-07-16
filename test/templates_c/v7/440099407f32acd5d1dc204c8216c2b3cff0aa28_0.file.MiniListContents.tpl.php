@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 4.5.4, created on 2025-06-17 09:50:48
+/* Smarty version 4.5.4, created on 2025-07-15 09:01:15
   from 'C:\xampp\htdocs\proxy-crm\layouts\v7\modules\Vtiger\dashboards\MiniListContents.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.5.4',
-  'unifunc' => 'content_68513a78df91e5_10505493',
+  'unifunc' => 'content_687618dbab0412_86998586',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_68513a78df91e5_10505493 (Smarty_Internal_Template $_smarty_tpl) {
+function content_687618dbab0412_86998586 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div style='padding-top: 0;margin-bottom: 2%;padding-right:15px;'>
     <input type="hidden" id="widget_<?php echo $_smarty_tpl->tpl_vars['WIDGET']->value->get('id');?>
 _currentPage" value="<?php echo $_smarty_tpl->tpl_vars['CURRENT_PAGE']->value;?>

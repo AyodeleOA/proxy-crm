@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 4.5.4, created on 2025-05-29 10:45:38
+/* Smarty version 4.5.4, created on 2025-07-16 08:37:51
   from 'C:\xampp\htdocs\proxy-crm\layouts\v7\modules\HelpDesk\DetailViewHeaderTitle.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.5.4',
-  'unifunc' => 'content_68383ad2388cf5_19021683',
+  'unifunc' => 'content_687764df5f8cc7_87249849',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_68383ad2388cf5_19021683 (Smarty_Internal_Template $_smarty_tpl) {
+function content_687764df5f8cc7_87249849 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div class="col-sm-6 col-lg-6 col-md-6"><div class="record-header clearfix"><div class="recordImage bghelpdesk app-<?php echo (isset($_smarty_tpl->tpl_vars['SELECTED_MENU_CATEGORY']->value)) ? $_smarty_tpl->tpl_vars['SELECTED_MENU_CATEGORY']->value : '';?>
 "><div class="name"><span><strong><?php echo $_smarty_tpl->tpl_vars['MODULE_MODEL']->value->getModuleIcon();?>
 </strong></span></div></div><div class="recordBasicInfo"><div class="info-row"><h4><span class="recordLabel pushDown" title="<?php echo $_smarty_tpl->tpl_vars['RECORD']->value->getName();?>

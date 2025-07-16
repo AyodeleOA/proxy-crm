@@ -30,13 +30,16 @@
         <link type='text/css' rel='stylesheet' href='{vresource_url("layouts/v7/lib/jquery/jquery.qtip.custom/jquery.qtip.css")}'>
         <link type='text/css' rel='stylesheet' href='{vresource_url("layouts/v7/lib/jquery/daterangepicker/daterangepicker.css")}'>
 		
+		
+		<!-- Bootstrap 4 or 5 CDN -->
+
 		<!-- New css-->
 		{if $MODULE eq 'Users' && $VIEW eq 'Login'}
 			<link type='text/css' rel='stylesheet' href='{vresource_url("layouts/v7/lib/newui/css/login.css")}'>
 			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 			
 		{else}
-			  <link rel="stylesheet" href='{vresource_url("layouts/v7/lib/newui/css/dashboard.css?v=9801")}'>
+			  <link rel="stylesheet" href='{vresource_url("layouts/v7/lib/newui/css/dashboard.css?v=901")}'>
 			  <!--
 			  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-xxz7cY3rGt9hrQjM9vb9ADf6D6SH1a8lALo0OyOPJ2WwHgCXLzqkWdKk1q4zKKhWQG+lEOszn8I+Zy4D2fPqCQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 			  -->
@@ -47,9 +50,9 @@
 		
         
         <input type="hidden" id="inventoryModules" value={ZEND_JSON::encode($INVENTORY_MODULES)}>
-        {if isset($SELECTED_MENU_CATEGORY)}
+        
         {assign var=V7_THEME_PATH value=Vtiger_Theme::getv7AppStylePath($SELECTED_MENU_CATEGORY)}
-        {/if}
+      
         {if strpos($V7_THEME_PATH,".less")!== false}
             <link type="text/css" rel="stylesheet/less" href="{vresource_url($V7_THEME_PATH)}" media="screen" />
         {else}
@@ -113,7 +116,7 @@
 		}
 		
 		.bigger-icon{
-			font-size:20px !important;
+			font-size:16px !important;
 		}
 		
 		.sub-menu li {
@@ -184,7 +187,7 @@
 		
 		@media (min-width: 1200px) {
 			.sidebar {
-				width: 22% !important;
+				width: 20% !important;
 			}
 		}
 		
@@ -211,7 +214,7 @@
 		}
 		
 		.no-radius{
-			border-radius:0px;
+			/* border-radius:0px; */
 		}
 		
 		.sidebar-menu .sidebar-btn {
@@ -280,9 +283,89 @@
 			background: transparent !important;
 		}
 		.main-container .module-nav {
-
 			#background-color: #2C3B49;
 			background: #ccc !important;
+		}
+		@media (min-width: 992px) {
+			.main-container .sidebar-essentials {
+			display: inline-block;
+			width: auto !important;
+			}
+		}
+		
+		.sidebar-essentialss {
+			/* background: #eee !important; */
+			background: #FFFFFF;
+			border-right: 1px solid #DDDDDD;
+			overflow: auto;
+			border-width: thin;
+		}
+		@media (min-width: 0px) and (max-width: 830px) {
+			#appnavcontent {
+				border: 1px solid #ccc;
+				background: #f0f0f0;
+				border-width: thin;
+				padding: 3px;
+			}
+		}
+		.container-fluid {
+			/* background: #f0f0f0; */
+		}
+		.fs-20{
+			font-size:20px;
+		}
+		.dashBoardWidgetFooter {
+			 position: relative !important;
+		}
+
+		.dashboardWidgetContent{
+			height: 220px !important; 
+			overflow: scroll !important;
+		}
+		.dashboardWidgetHeader{
+			height: 75px;
+		}
+		.mb-4{
+			margin-bottom:20px;
+		}
+		@media (max-width: 767.98px) {
+		  .hide-on-mobile {
+			display: none !important;
+		  }
+		}
+		.search-link .keyword-input{
+			background: transparent;
+			width: 80%;
+		}
+		.header-search {
+			background: transparent; 
+		}
+		.search-link {
+		 border-radius: 5px;
+		}
+		.search-link .fa {
+			color: white !important;
+		}
+		.search-link .keyword-input::placeholder{
+		  color: white; 
+		  opacity: 1;  
+		}
+		.textOverflowEllipsis {
+			font-size: 14px;
+		}
+		.mCSB_container {
+			font-size: 13px;
+		}
+		.dashBoardContainer .tabContainer .sortable button {
+			margin-top: 10px;
+			border-radius: 3px;
+		}
+		.search-bar input {
+			width: 100%;
+			padding: 8px 7px 7px 30px;
+		}
+		.pt-20{
+			padding-top:20px;
 		}
 		</style>
 		<script type="text/javascript">var __pageCreationTime = (new Date()).getTime();</script>

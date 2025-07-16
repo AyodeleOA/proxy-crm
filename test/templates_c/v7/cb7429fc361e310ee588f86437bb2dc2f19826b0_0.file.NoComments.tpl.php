@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 4.5.4, created on 2025-05-29 10:45:39
+/* Smarty version 4.5.4, created on 2025-07-16 08:37:52
   from 'C:\xampp\htdocs\proxy-crm\layouts\v7\modules\Vtiger\NoComments.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.5.4',
-  'unifunc' => 'content_68383ad31e6d84_59351221',
+  'unifunc' => 'content_687764e0d0dc77_86654704',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_68383ad31e6d84_59351221 (Smarty_Internal_Template $_smarty_tpl) {
+function content_687764e0d0dc77_86654704 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div class="noCommentsMsgContainer noContent"><p class="textAlignCenter"> <?php echo vtranslate('LBL_NO_COMMENTS',$_smarty_tpl->tpl_vars['MODULE_NAME']->value);?>
 </p></div><?php }
 }

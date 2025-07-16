@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.5.4, created on 2025-05-29 12:04:59
+/* Smarty version 4.5.4, created on 2025-07-15 11:23:22
   from 'C:\xampp\htdocs\proxy-crm\layouts\v7\modules\Vtiger\ListViewContents.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.5.4',
-  'unifunc' => 'content_68384d6b876ae9_08863441',
+  'unifunc' => 'content_68763a2a6451d6_93004823',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '95299231a184bedbf2b6ac321eb520abf8fdf287' => 
     array (
       0 => 'C:\\xampp\\htdocs\\proxy-crm\\layouts\\v7\\modules\\Vtiger\\ListViewContents.tpl',
-      1 => 1748520296,
+      1 => 1752431572,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_68384d6b876ae9_08863441 (Smarty_Internal_Template $_smarty_tpl) {
+function content_68763a2a6451d6_93004823 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_subTemplateRender(call_user_func_array($_smarty_tpl->registered_plugins[ 'modifier' ][ 'vtemplate_path' ][ 0 ], array( "PicklistColorMap.tpl",$_smarty_tpl->tpl_vars['MODULE']->value )), $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, true);
 ?>
 
@@ -28,7 +28,8 @@ $_smarty_tpl->_subTemplateRender(call_user_func_array($_smarty_tpl->registered_p
 	<?php $_smarty_tpl->_assignInScope('SELECTED_MENU_CATEGORY', '');
 }?>
 
-<div class="col-sm-12 col-xs-12 ">
+<div class="row">
+<div class="col-sm-12 col-xs-12 special">
 	<?php if ($_smarty_tpl->tpl_vars['MODULE']->value != 'EmailTemplates' && $_smarty_tpl->tpl_vars['SEARCH_MODE_RESULTS']->value != true) {?>
 		<?php $_smarty_tpl->_assignInScope('LEFTPANELHIDE', $_smarty_tpl->tpl_vars['CURRENT_USER_MODEL']->value->get('leftpanelhide'));?>
 		<div class="essentials-toggle" title="<?php echo vtranslate('LBL_LEFT_PANEL_SHOW_HIDE','Vtiger');?>
@@ -277,8 +278,8 @@ $_smarty_tpl->tpl_vars['LISTVIEW_HEADER']->do_else = false;
 										<?php if ($_smarty_tpl->tpl_vars['LISTVIEW_HEADER']->value->get('uitype') == '72') {?>
 											<?php ob_start();
 echo $_smarty_tpl->tpl_vars['CURRENT_USER_MODEL']->value->get('currency_symbol_placement');
-$_prefixVariable1 = ob_get_clean();
-$_smarty_tpl->_assignInScope('CURRENCY_SYMBOL_PLACEMENT', $_prefixVariable1);?>
+$_prefixVariable5 = ob_get_clean();
+$_smarty_tpl->_assignInScope('CURRENCY_SYMBOL_PLACEMENT', $_prefixVariable5);?>
 											<?php if ($_smarty_tpl->tpl_vars['CURRENCY_SYMBOL_PLACEMENT']->value == '1.0$') {?>
 												<?php echo $_smarty_tpl->tpl_vars['LISTVIEW_ENTRY_VALUE']->value;
 echo $_smarty_tpl->tpl_vars['LISTVIEW_ENTRY']->value->get('currencySymbol');?>
@@ -298,27 +299,27 @@ echo $_smarty_tpl->tpl_vars['LISTVIEW_ENTRY_VALUE']->value;?>
 											<?php if ($_smarty_tpl->tpl_vars['LISTVIEW_ENTRY']->value->get('activitytype') == 'Task') {?>
 												<?php ob_start();
 echo $_smarty_tpl->tpl_vars['LISTVIEW_HEADER']->value->getId();
-$_prefixVariable2 = ob_get_clean();
-$_smarty_tpl->_assignInScope('PICKLIST_FIELD_ID', $_prefixVariable2);?>
+$_prefixVariable6 = ob_get_clean();
+$_smarty_tpl->_assignInScope('PICKLIST_FIELD_ID', $_prefixVariable6);?>
 											<?php } else { ?>
 												<?php if ($_smarty_tpl->tpl_vars['LISTVIEW_HEADER']->value->getName() == 'taskstatus') {?>
 													<?php $_smarty_tpl->_assignInScope('EVENT_STATUS_FIELD_MODEL', Vtiger_Field_Model::getInstance('eventstatus',Vtiger_Module_Model::getInstance('Events')));?>
 													<?php if ($_smarty_tpl->tpl_vars['EVENT_STATUS_FIELD_MODEL']->value) {?>
 														<?php ob_start();
 echo $_smarty_tpl->tpl_vars['EVENT_STATUS_FIELD_MODEL']->value->getId();
-$_prefixVariable3 = ob_get_clean();
-$_smarty_tpl->_assignInScope('PICKLIST_FIELD_ID', $_prefixVariable3);?>
+$_prefixVariable7 = ob_get_clean();
+$_smarty_tpl->_assignInScope('PICKLIST_FIELD_ID', $_prefixVariable7);?>
 													<?php } else { ?> 
 														<?php ob_start();
 echo $_smarty_tpl->tpl_vars['LISTVIEW_HEADER']->value->getId();
-$_prefixVariable4 = ob_get_clean();
-$_smarty_tpl->_assignInScope('PICKLIST_FIELD_ID', $_prefixVariable4);?>
+$_prefixVariable8 = ob_get_clean();
+$_smarty_tpl->_assignInScope('PICKLIST_FIELD_ID', $_prefixVariable8);?>
 													<?php }?>
 												<?php } else { ?>
 													<?php ob_start();
 echo $_smarty_tpl->tpl_vars['LISTVIEW_HEADER']->value->getId();
-$_prefixVariable5 = ob_get_clean();
-$_smarty_tpl->_assignInScope('PICKLIST_FIELD_ID', $_prefixVariable5);?>
+$_prefixVariable9 = ob_get_clean();
+$_smarty_tpl->_assignInScope('PICKLIST_FIELD_ID', $_prefixVariable9);?>
 												<?php }?>
 											<?php }?>
 											<span <?php if (!empty($_smarty_tpl->tpl_vars['LISTVIEW_ENTRY_VALUE']->value)) {?> class="picklist-color picklist-<?php echo $_smarty_tpl->tpl_vars['PICKLIST_FIELD_ID']->value;?>
@@ -375,8 +376,8 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
 					<tr class="emptyRecordsDiv">
 						<?php ob_start();
 echo php7_count($_smarty_tpl->tpl_vars['LISTVIEW_HEADERS']->value);
-$_prefixVariable6 = ob_get_clean();
-$_smarty_tpl->_assignInScope('COLSPAN_WIDTH', $_prefixVariable6+1);?>
+$_prefixVariable10 = ob_get_clean();
+$_smarty_tpl->_assignInScope('COLSPAN_WIDTH', $_prefixVariable10+1);?>
 						<td colspan="<?php echo $_smarty_tpl->tpl_vars['COLSPAN_WIDTH']->value;?>
 ">
 							<div class="emptyRecordsContent">
@@ -413,5 +414,5 @@ $_smarty_tpl->_assignInScope('COLSPAN_WIDTH', $_prefixVariable6+1);?>
 		<div id="scroller" class="scroller-div"></div>
 	</div>
 </div>
-<?php }
+</div><?php }
 }

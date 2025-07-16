@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 4.5.4, created on 2025-05-28 12:05:53
+/* Smarty version 4.5.4, created on 2025-07-16 08:38:03
   from 'C:\xampp\htdocs\proxy-crm\layouts\v7\modules\Vtiger\uitypes\Owner.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.5.4',
-  'unifunc' => 'content_6836fc218dc123_44402604',
+  'unifunc' => 'content_687764eb1527a6_12721024',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_6836fc218dc123_44402604 (Smarty_Internal_Template $_smarty_tpl) {
+function content_687764eb1527a6_12721024 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_assignInScope('SPECIAL_VALIDATOR', $_smarty_tpl->tpl_vars['FIELD_MODEL']->value->getValidator());
 $_smarty_tpl->_assignInScope('FIELD_INFO', $_smarty_tpl->tpl_vars['FIELD_MODEL']->value->getFieldInfo());
 if ($_smarty_tpl->tpl_vars['FIELD_MODEL']->value->get('uitype') == '53') {

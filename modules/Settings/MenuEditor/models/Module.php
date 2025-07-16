@@ -42,6 +42,7 @@ class Settings_MenuEditor_Module_Model extends Settings_Vtiger_Module_Model {
 		if ($count > 0) {
 			for ($i = 0; $i < $count; $i++) {
 				$tabid = $db->query_result($result, $i, 'tabid');
+				
 				$moduleName = getTabModuleName($tabid);
 				$moduleInstance = Vtiger_Module_Model::getInstance($moduleName);
 				if ($moduleInstance->isActive()) {
@@ -59,11 +60,15 @@ class Settings_MenuEditor_Module_Model extends Settings_Vtiger_Module_Model {
 		$db = PearDatabase::getInstance();
 		$result = $db->pquery('SELECT * FROM vtiger_app2tab WHERE visible = ? ORDER BY appname,sequence', array(1));
 		$count = $db->num_rows($result);
+
+		//var_dump($result);
 		$userPrivModel = Users_Privileges_Model::getCurrentUserPrivilegesModel();
 		if ($count > 0) {
 			for ($i = 0; $i < $count; $i++) {
 				$tabid = $db->query_result($result, $i, 'tabid');
+				//var_dump($tabid);
 				$moduleName = getTabModuleName($tabid);
+				//var_dump($moduleName);
 				$moduleModel = Vtiger_Module_Model::getInstance($moduleName);
 				if (empty($moduleModel)) {
 					continue;
@@ -71,6 +76,11 @@ class Settings_MenuEditor_Module_Model extends Settings_Vtiger_Module_Model {
 
 				$sequence = $db->query_result($result, $i, 'sequence');
 				$appname = $db->query_result($result, $i, 'appname');
+				if ($appname=="INVENTORY") {
+					continue;
+				}
+				//var_dump($appname);
+				
 				$moduleModel->set('app2tab_sequence', $sequence);
 				if (($userPrivModel->isAdminUser() ||
 						$userPrivModel->hasGlobalReadPermission() ||

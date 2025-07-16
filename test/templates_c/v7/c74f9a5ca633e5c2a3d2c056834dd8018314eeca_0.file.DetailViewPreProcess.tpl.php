@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.5.4, created on 2025-06-17 10:42:42
+/* Smarty version 4.5.4, created on 2025-07-15 23:01:15
   from 'C:\xampp\htdocs\proxy-crm\layouts\v7\modules\Vtiger\DetailViewPreProcess.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.5.4',
-  'unifunc' => 'content_685146a2466665_10772246',
+  'unifunc' => 'content_6876ddbb9b3257_21943542',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'c74f9a5ca633e5c2a3d2c056834dd8018314eeca' => 
     array (
       0 => 'C:\\xampp\\htdocs\\proxy-crm\\layouts\\v7\\modules\\Vtiger\\DetailViewPreProcess.tpl',
-      1 => 1748958709,
+      1 => 1752620466,
       2 => 'file',
     ),
   ),
@@ -22,8 +22,11 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:modules/Vtiger/partials/SidebarAppMenu.tpl' => 1,
   ),
 ),false)) {
-function content_685146a2466665_10772246 (Smarty_Internal_Template $_smarty_tpl) {
-$_smarty_tpl->_subTemplateRender("file:modules/Vtiger/Header.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
+function content_6876ddbb9b3257_21943542 (Smarty_Internal_Template $_smarty_tpl) {
+$_smarty_tpl->_checkPlugins(array(0=>array('file'=>'C:\\xampp\\htdocs\\proxy-crm\\vendor\\smarty\\smarty\\libs\\plugins\\modifier.capitalize.php','function'=>'smarty_modifier_capitalize',),));
+?>
+
+<?php $_smarty_tpl->_subTemplateRender("file:modules/Vtiger/Header.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 ?>
 
 <?php $_smarty_tpl->_subTemplateRender("file:modules/Vtiger/partials/SidebarAppMenu.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
@@ -55,14 +58,8 @@ $_smarty_tpl->_subTemplateRender("file:modules/Vtiger/Header.tpl", $_smarty_tpl-
 					<?php }?>
 				<?php }?>
 				
-				<h4 class="module-title pull-left text-white"> <?php ob_start();
-echo $_smarty_tpl->tpl_vars['SELECTED_MENU_CATEGORY']->value;
-$_prefixVariable1 = ob_get_clean();
-ob_start();
-echo $_smarty_tpl->tpl_vars['SELECTED_MENU_CATEGORY']->value;
-$_prefixVariable2 = ob_get_clean();
-echo vtranslate($_prefixVariable1,$_prefixVariable2);?>
- </h4>&nbsp;&nbsp;</a>
+				<h4 class="module-title pull-left text-white"> <?php echo smarty_modifier_capitalize(vtranslate($_smarty_tpl->tpl_vars['SELECTED_MENU_CATEGORY']->value,$_smarty_tpl->tpl_vars['SELECTED_MENU_CATEGORY']->value));?>
+</h4>&nbsp;&nbsp;</a>
 				
 				<p class="current-filter-name filter-name pull-left cursorPointer" title="<?php echo $_smarty_tpl->tpl_vars['CVNAME']->value;?>
 ">
@@ -183,7 +180,7 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
             </div>
         </div>
         <div class="detailViewContainer viewContent clearfix">
-            <div class="col-sm-12 col-xs-12 content-area">
+            <div class="col-sm-12 col-xs-12 content-area pt-20">
                 <?php $_smarty_tpl->_subTemplateRender(call_user_func_array($_smarty_tpl->registered_plugins[ 'modifier' ][ 'vtemplate_path' ][ 0 ], array( "DetailViewHeader.tpl",$_smarty_tpl->tpl_vars['MODULE']->value )), $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, true);
 ?>
                 <div class="row">

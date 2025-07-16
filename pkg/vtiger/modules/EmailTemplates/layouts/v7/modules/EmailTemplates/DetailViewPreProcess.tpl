@@ -31,4 +31,4 @@
 			</div>
 		</div>
 		<div class="detailViewContainer viewContent clearfix">
-			<div class="content-area container-fluid">
+			<div class="content-area pt-20 container-fluid">

@@ -15,7 +15,7 @@
 			<div class="col-lg-7 col-md-7">
 				{if $USER_MODEL->isAdminUser()}
 					<a title="{vtranslate('Home', $MODULE)}" href='index.php?module=Vtiger&parent=Settings&view=Index'>
-						<h4 class="module-title pull-left text-uppercase">{vtranslate('LBL_HOME', $MODULE)} </h4>
+						<h4 class="module-title pull-left">{vtranslate('LBL_HOME', $MODULE)} </h4>
 					</a>
 					&nbsp;<span class="fa fa-angle-right pull-left {if $VIEW eq 'Index' && $MODULE eq 'Vtiger'} hide {/if}" aria-hidden="true" style="padding-top: 12px;padding-left: 5px; padding-right: 5px;"></span>
 				{/if}

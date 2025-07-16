@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 4.5.4, created on 2025-07-07 16:28:45
+/* Smarty version 4.5.4, created on 2025-07-15 22:40:37
   from 'C:\xampp\htdocs\proxy-crm\layouts\v7\modules\Leads\SummaryViewWidgets.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.5.4',
-  'unifunc' => 'content_686bf5bd0ec0d4_00529436',
+  'unifunc' => 'content_6876d8e5475b83_34191861',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_686bf5bd0ec0d4_00529436 (Smarty_Internal_Template $_smarty_tpl) {
+function content_6876d8e5475b83_34191861 (Smarty_Internal_Template $_smarty_tpl) {
 $_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['DETAILVIEW_LINKS']->value['DETAILVIEWWIDGET'], 'DETAIL_VIEW_WIDGET');
 $_smarty_tpl->tpl_vars['DETAIL_VIEW_WIDGET']->do_else = true;
 if ($_from !== null) foreach ($_from as $_smarty_tpl->tpl_vars['DETAIL_VIEW_WIDGET']->value) {
@@ -47,21 +47,21 @@ $_smarty_tpl->_assignInScope('PARENT_ID', $_smarty_tpl->tpl_vars['RECORD']->valu
 ,'<?php echo $_smarty_tpl->tpl_vars['MODULE_NAME']->value;?>
 ')"><img style="  margin-top: -3px;margin-right: 4%;" title="Vtiger" alt="Vtiger" src="layouts/v7/skins//images/Vtiger.png"><?php ob_start();
 echo vtranslate('LBL_VTIGER','Documents');
-$_prefixVariable1 = ob_get_clean();
-echo vtranslate('LBL_TO_SERVICE','Documents',$_prefixVariable1);?>
+$_prefixVariable3 = ob_get_clean();
+echo vtranslate('LBL_TO_SERVICE','Documents',$_prefixVariable3);?>
 </a></li><li class="dropdown-header"><i class="fa fa-link"></i> <?php echo vtranslate('LBL_LINK_EXTERNAL_DOCUMENT','Documents');?>
 </li><li id="shareDocument"><a href="javascript:Documents_Index_Js.createDocument('E',<?php echo $_smarty_tpl->tpl_vars['PARENT_ID']->value;?>
 ,'<?php echo $_smarty_tpl->tpl_vars['MODULE_NAME']->value;?>
 ')">&nbsp;<i class="fa fa-external-link"></i>&nbsp;&nbsp; <?php ob_start();
 echo vtranslate('LBL_FILE_URL','Documents');
-$_prefixVariable2 = ob_get_clean();
-echo vtranslate('LBL_FROM_SERVICE','Documents',$_prefixVariable2);?>
+$_prefixVariable4 = ob_get_clean();
+echo vtranslate('LBL_FROM_SERVICE','Documents',$_prefixVariable4);?>
 </a></li><li role="separator" class="divider"></li><li id="createDocument"><a href="javascript:Documents_Index_Js.createDocument('W',<?php echo $_smarty_tpl->tpl_vars['PARENT_ID']->value;?>
 ,'<?php echo $_smarty_tpl->tpl_vars['MODULE_NAME']->value;?>
 ')"><i class="fa fa-file-text"></i> <?php ob_start();
 echo vtranslate('SINGLE_Documents','Documents');
-$_prefixVariable3 = ob_get_clean();
-echo vtranslate('LBL_CREATE_NEW','Documents',$_prefixVariable3);?>
+$_prefixVariable5 = ob_get_clean();
+echo vtranslate('LBL_CREATE_NEW','Documents',$_prefixVariable5);?>
 </a></li></ul></div></div><?php }?></div><div class="widget_contents"></div></div></div><?php }?></div><div class="middle-block col-lg-8"><div id="relatedActivities"><?php echo $_smarty_tpl->tpl_vars['RELATED_ACTIVITIES']->value;?>
 </div><?php if ($_smarty_tpl->tpl_vars['COMMENTS_WIDGET_MODEL']->value) {?><div class="summaryWidgetContainer"><div class="widgetContainer_comments" data-url="<?php echo $_smarty_tpl->tpl_vars['COMMENTS_WIDGET_MODEL']->value->getUrl();?>
 " data-name="<?php echo $_smarty_tpl->tpl_vars['COMMENTS_WIDGET_MODEL']->value->getLabel();?>

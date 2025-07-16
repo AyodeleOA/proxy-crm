@@ -217,9 +217,10 @@ class Vtiger_MenuStructure_Model extends Vtiger_Base_Model {
 		$oldToNewAppMap = array(
 							'CONTACT'				=> 'SALES',
 							'MARKETING_AND_SALES'	=> 'MARKETING',
-							'INVENTORY'				=> 'INVENTORY',
+							'CALL CENTER'			=> 'CALL CENTER',
 							'SUPPORT'				=> 'SUPPORT',
-							'PROJECT'				=> 'PROJECT',
+							//'PROJECT'				=> 'PROJECT',
+							'INVENTORY'				=> 'INVENTORY',
 							'TOOLS'					=> 'TOOLS'
 						  );
 		return $oldToNewAppMap;
@@ -230,12 +231,20 @@ class Vtiger_MenuStructure_Model extends Vtiger_Base_Model {
 	 * @return <array>
 	 */
 	public static function getAppMenuList(){
-		return array('MARKETING','SALES','INVENTORY','SUPPORT','PROJECT','TOOLS');
+		return array(
+			'MARKETING',
+			'SALES',
+			'CALL CENTER',
+			'SUPPORT',
+			'PROJECT',
+			'INVENTORY',
+			'TOOLS');
 	}
 
 	public static function getAppIcons() {
 		$appImageIcons = array(	'MARKETING' => 'fa-users',
 								'SALES'		=> 'fa-dot-circle-o',
+								'CALL CENTER'	=> 'fa-phone',
 								'SUPPORT'	=> 'fa-life-ring',
 								'INVENTORY'	=> 'vicon-inventory',
 								'PROJECT'	=> 'fa-briefcase',

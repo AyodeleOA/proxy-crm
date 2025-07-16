@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 4.5.4, created on 2025-06-03 15:39:42
+/* Smarty version 4.5.4, created on 2025-07-15 09:27:34
   from 'C:\xampp\htdocs\proxy-crm\layouts\v7\modules\Settings\Vtiger\Index.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.5.4',
-  'unifunc' => 'content_683f173ecd5f66_81213367',
+  'unifunc' => 'content_68761f06d639c5_85273535',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_683f173ecd5f66_81213367 (Smarty_Internal_Template $_smarty_tpl) {
+function content_68761f06d639c5_85273535 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div class="settingsIndexPage col-lg-12 col-md-12 col-sm-12"><div><h4><?php echo vtranslate('LBL_SUMMARY',$_smarty_tpl->tpl_vars['MODULE']->value);?>
 </h4></div><hr><div class="row"><span class="col-lg-4 col-md-4 col-sm-4 settingsSummary"><a href="index.php?module=Users&parent=Settings&view=List"><h2 class="summaryCount"><?php echo $_smarty_tpl->tpl_vars['USERS_COUNT']->value;?>
 </h2><p class="summaryText" style="margin-top:20px;"><?php echo vtranslate('LBL_ACTIVE_USERS',$_smarty_tpl->tpl_vars['MODULE']->value);?>

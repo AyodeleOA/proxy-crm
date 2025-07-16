@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.5.4, created on 2025-06-17 10:42:42
+/* Smarty version 4.5.4, created on 2025-07-15 12:29:22
   from 'C:\xampp\htdocs\proxy-crm\layouts\v7\modules\Contacts\DetailViewHeaderTitle.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.5.4',
-  'unifunc' => 'content_685146a25841f5_87668881',
+  'unifunc' => 'content_687649a241d751_58038405',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '42af77dc1d1b1d821cd0deb901b7ab2208602e2d' => 
     array (
       0 => 'C:\\xampp\\htdocs\\proxy-crm\\layouts\\v7\\modules\\Contacts\\DetailViewHeaderTitle.tpl',
-      1 => 1727638512,
+      1 => 1752581149,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_685146a25841f5_87668881 (Smarty_Internal_Template $_smarty_tpl) {
+function content_687649a241d751_58038405 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div class="col-lg-6 col-md-6 col-sm-6"><div class="record-header clearfix "><div class="recordImage bgcontacts app-<?php echo $_smarty_tpl->tpl_vars['SELECTED_MENU_CATEGORY']->value;?>
 "><?php $_smarty_tpl->_assignInScope('IMAGE_DETAILS', $_smarty_tpl->tpl_vars['RECORD']->value->getImageDetails());
 $_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['IMAGE_DETAILS']->value, 'IMAGE_INFO', false, 'ITER');

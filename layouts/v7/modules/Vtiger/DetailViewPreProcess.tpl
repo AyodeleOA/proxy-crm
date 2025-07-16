@@ -36,7 +36,7 @@
 					{/if}
 				{/if}
 				
-				<h4 class="module-title pull-left text-white"> {vtranslate({$SELECTED_MENU_CATEGORY}, {$SELECTED_MENU_CATEGORY})} </h4>&nbsp;&nbsp;</a>
+				<h4 class="module-title pull-left text-white"> {vtranslate($SELECTED_MENU_CATEGORY, $SELECTED_MENU_CATEGORY)|capitalize}</h4>&nbsp;&nbsp;</a>
 				
 				<p class="current-filter-name filter-name pull-left cursorPointer" title="{$CVNAME}">
 					<span class="long-slash">/</span>
@@ -123,7 +123,7 @@
             </div>
         </div>
         <div class="detailViewContainer viewContent clearfix">
-            <div class="col-sm-12 col-xs-12 content-area">
+            <div class="col-sm-12 col-xs-12 content-area pt-20">
                 {include file="DetailViewHeader.tpl"|vtemplate_path:$MODULE}
                 <div class="row">
                     <div class="col-lg-6 col-md-6 col-sm-6">

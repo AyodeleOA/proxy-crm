@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 4.5.4, created on 2025-05-28 15:43:55
+/* Smarty version 4.5.4, created on 2025-07-15 09:01:18
   from 'C:\xampp\htdocs\proxy-crm\layouts\v7\modules\Vtiger\dashboards\HistoryContents.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.5.4',
-  'unifunc' => 'content_68372f3bad6bf9_08200518',
+  'unifunc' => 'content_687618de88d0d9_55628389',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_68372f3bad6bf9_08200518 (Smarty_Internal_Template $_smarty_tpl) {
+function content_687618de88d0d9_55628389 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <div style='padding:5px;'>
 	<?php if ($_smarty_tpl->tpl_vars['HISTORIES']->value != false) {?>

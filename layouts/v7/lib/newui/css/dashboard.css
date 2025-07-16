@@ -57,7 +57,7 @@ body {
 }
 
 .logo {
-  width: 200px;
+  width: 140px;
   margin: 0 auto 20px;
 }
 
@@ -266,7 +266,11 @@ ul.dropdown-menu
   width: 100%;
   height: 100%;
   object-fit: cover; /* ensures the image covers the space nicely */
-  border-radius: 12px; /* optional, for rounded corners */
+  
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
 }
 
 .header-content {
@@ -336,9 +340,9 @@ ul.dropdown-menu
   background: white;
   border-radius: 8px;
   overflow: hidden;
-  display: flex;
+  /* display: flex; */
   flex-direction: column;
-  height: 270px;
+  /* height: 270px; */
 }
 
 .widget-header {
@@ -423,7 +427,7 @@ ul.dropdown-menu
 /* Responsive Adjustments */
 @media (max-width: 1200px) {
   .sidebar {
-    width: 240px;
+    width: 200px;
   }
   
   .widgets-grid {

@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 4.5.4, created on 2025-05-28 12:05:53
+/* Smarty version 4.5.4, created on 2025-07-16 08:38:03
   from 'C:\xampp\htdocs\proxy-crm\layouts\v7\modules\Vtiger\uitypes\Date.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.5.4',
-  'unifunc' => 'content_6836fc21a3b4b4_08300900',
+  'unifunc' => 'content_687764eb1019b1_83871471',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_6836fc21a3b4b4_08300900 (Smarty_Internal_Template $_smarty_tpl) {
+function content_687764eb1019b1_83871471 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_assignInScope('FIELD_INFO', $_smarty_tpl->tpl_vars['FIELD_MODEL']->value->getFieldInfo());
 $_smarty_tpl->_assignInScope('SPECIAL_VALIDATOR', $_smarty_tpl->tpl_vars['FIELD_MODEL']->value->getValidator());
 $_smarty_tpl->_assignInScope('dateFormat', $_smarty_tpl->tpl_vars['USER_MODEL']->value->get('date_format'));

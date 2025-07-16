@@ -68,6 +68,8 @@ class Vtiger_Theme extends Vtiger_Viewer {
 		$basepath = 'layouts'. '/' . self::getLayoutName();
 		$useskin = static::DEFAULTSKIN;
 
+		//var_dump(self::getLayoutName());
+
 		// do we have any override valid custom skin?
 		$customskin = isset($_SESSION) && isset($_SESSION['authenticated_user_skin']) ?  $_SESSION['authenticated_user_skin'] : '';
 		if ($customskin && !preg_match("/[^a-zA-Z0-9_-]/", $customskin)) { // strict-check to avoid file-inclusion attack.
@@ -89,6 +91,7 @@ class Vtiger_Theme extends Vtiger_Viewer {
 			$theme = self::getDefaultThemeName();
 		}
 
+		//var_dump($theme);
 		$selectedThemePath = self::getBaseThemePath() . '/' . $theme;
 		$fallBackThemePath = self::getBaseThemePath() . '/' . self::getDefaultThemeName();
 
@@ -110,7 +113,9 @@ class Vtiger_Theme extends Vtiger_Viewer {
 	 */
 	public static function getDefaultThemeName(){
 		$currentUserModel = Users_Record_Model::getCurrentUserModel();
+		//var_dump($currentUserModel);
 		$theme = $currentUserModel->get('theme');
+		//var_dump($theme);
 		return empty($theme)? self::DEFAULTTHEME : $theme;
 	}
 
@@ -123,6 +128,7 @@ class Vtiger_Theme extends Vtiger_Viewer {
 		if (!empty($dirs)) {
 			$dirs = array_map('basename', $dirs);
 		}
+		
 		return $dirs;
 	}
 
@@ -139,6 +145,7 @@ class Vtiger_Theme extends Vtiger_Viewer {
 		if (empty($appTheme)) {
 			$appTheme = 'MARKETING';
 		}
+		//var_dump($appTheme);
 		return Vtiger_Theme::getStylePath('', strtolower($appTheme));
 	}
 }

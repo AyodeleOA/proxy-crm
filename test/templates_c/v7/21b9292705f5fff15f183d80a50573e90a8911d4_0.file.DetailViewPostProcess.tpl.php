@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 4.5.4, created on 2025-05-28 12:06:45
+/* Smarty version 4.5.4, created on 2025-07-15 12:29:22
   from 'C:\xampp\htdocs\proxy-crm\layouts\v7\modules\Vtiger\DetailViewPostProcess.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.5.4',
-  'unifunc' => 'content_6836fc55f1ad91_49705243',
+  'unifunc' => 'content_687649a28ebbc6_48125143',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_6836fc55f1ad91_49705243 (Smarty_Internal_Template $_smarty_tpl) {
+function content_687649a28ebbc6_48125143 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
                 </div>
             </div>

@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 4.5.4, created on 2025-05-26 11:13:17
+/* Smarty version 4.5.4, created on 2025-07-15 11:23:22
   from 'C:\xampp\htdocs\proxy-crm\layouts\v7\modules\Vtiger\PicklistColorMap.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.5.4',
-  'unifunc' => 'content_68344ccdc92880_78892056',
+  'unifunc' => 'content_68763a2a669662_68799383',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_68344ccdc92880_78892056 (Smarty_Internal_Template $_smarty_tpl) {
+function content_68763a2a669662_68799383 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <style type="text/css">
     <?php

@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 4.5.4, created on 2025-05-26 13:45:04
+/* Smarty version 4.5.4, created on 2025-07-15 11:23:15
   from 'C:\xampp\htdocs\proxy-crm\layouts\v7\modules\Vtiger\OperationNotPermitted.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.5.4',
-  'unifunc' => 'content_68347060ded572_86009634',
+  'unifunc' => 'content_68763a231fbe94_71661561',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_68347060ded572_86009634 (Smarty_Internal_Template $_smarty_tpl) {
+function content_68763a231fbe94_71661561 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div style="margin:0 auto;width: 50em;">
 	<table border='0' cellpadding='5' cellspacing='0' height='600px' width="700px">
 	<tr><td align='center'>

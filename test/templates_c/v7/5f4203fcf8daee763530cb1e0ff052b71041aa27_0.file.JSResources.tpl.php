@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 4.5.4, created on 2025-07-07 17:00:15
+/* Smarty version 4.5.4, created on 2025-07-15 09:01:14
   from 'C:\xampp\htdocs\proxy-crm\layouts\v7\modules\Vtiger\JSResources.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.5.4',
-  'unifunc' => 'content_686bfd1fbc19d5_27862644',
+  'unifunc' => 'content_687618da505eb4_27369950',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_686bfd1fbc19d5_27862644 (Smarty_Internal_Template $_smarty_tpl) {
+function content_687618da505eb4_27369950 (Smarty_Internal_Template $_smarty_tpl) {
 echo '<script'; ?>
  type="text/javascript" src="<?php echo vresource_url('layouts/v7/lib/jquery/purl.js');?>
 "><?php echo '</script'; ?>

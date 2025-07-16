@@ -66,10 +66,11 @@
 				
 				<div >
 				{foreach key=index item=TAB_DATA from=$DASHBOARD_TABS}
-                    <div id="tab_{$TAB_DATA["id"]}" data-tabid="{$TAB_DATA["id"]}" data-tabname="{$TAB_DATA["tabname"]}" class="ml-5 tab-pane fade {if $TAB_DATA["id"] eq $SELECTED_TAB}in active{/if}">
+                    <div id="tab_{$TAB_DATA["id"]}" 
+					data-tabid="{$TAB_DATA["id"]}" 
+					data-tabname="{$TAB_DATA["tabname"]}" class="ml-0 tab-pane fade {if $TAB_DATA["id"] eq $SELECTED_TAB}in active{/if}">
                         {if $TAB_DATA["id"] eq $SELECTED_TAB}
-                            {include file="dashboards/DashBoardTabContents.tpl"|vtemplate_path:$MODULE TABID=$TABID}
-							
+                            {include file="dashboards/DashBoardTabContents.tpl"|vtemplate_path:$MODULE TABID=$TABID}					
                         {/if}
                     </div>
                 {/foreach}

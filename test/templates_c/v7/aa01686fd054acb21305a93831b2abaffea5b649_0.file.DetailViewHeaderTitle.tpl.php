@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 4.5.4, created on 2025-07-07 16:28:44
+/* Smarty version 4.5.4, created on 2025-07-15 22:40:37
   from 'C:\xampp\htdocs\proxy-crm\layouts\v7\modules\Leads\DetailViewHeaderTitle.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.5.4',
-  'unifunc' => 'content_686bf5bcdcf766_84070070',
+  'unifunc' => 'content_6876d8e5173977_42038565',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_686bf5bcdcf766_84070070 (Smarty_Internal_Template $_smarty_tpl) {
+function content_6876d8e5173977_42038565 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div class="col-sm-6 col-lg-6 col-md-6"><div class="record-header clearfix"><div class="hidden-sm hidden-xs recordImage bgleads app-<?php echo $_smarty_tpl->tpl_vars['SELECTED_MENU_CATEGORY']->value;?>
 "><?php $_smarty_tpl->_assignInScope('IMAGE_DETAILS', $_smarty_tpl->tpl_vars['RECORD']->value->getImageDetails());
 $_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['IMAGE_DETAILS']->value, 'IMAGE_INFO', false, 'ITER');

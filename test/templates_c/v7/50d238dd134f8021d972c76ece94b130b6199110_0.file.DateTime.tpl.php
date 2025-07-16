@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 4.5.4, created on 2025-07-07 17:44:17
+/* Smarty version 4.5.4, created on 2025-07-16 08:38:03
   from 'C:\xampp\htdocs\proxy-crm\layouts\v7\modules\Calendar\uitypes\DateTime.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.5.4',
-  'unifunc' => 'content_686c0771257889_53058173',
+  'unifunc' => 'content_687764eb0e4419_59831084',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_686c0771257889_53058173 (Smarty_Internal_Template $_smarty_tpl) {
+function content_687764eb0e4419_59831084 (Smarty_Internal_Template $_smarty_tpl) {
 if ($_smarty_tpl->tpl_vars['FIELD_MODEL']->value->getName() == 'date_start') {
 $_smarty_tpl->_assignInScope('DATE_FIELD', $_smarty_tpl->tpl_vars['FIELD_MODEL']->value);
 $_smarty_tpl->_assignInScope('MODULE_MODEL', $_smarty_tpl->tpl_vars['RECORD_STRUCTURE_MODEL']->value->getModule());

@@ -13,7 +13,7 @@
 *}
 
 					<!-- Sidebar -->
-					<aside class="sidebar">
+					<aside class="sidebar ">
 					  <div class="Sidebar_container">
 					  <div class="sidebar-header">
 					  
