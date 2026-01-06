@@ -11,6 +11,7 @@
 class Settings_Profiles_Detail_View extends Settings_Vtiger_Index_View {
 
 	public function process(Vtiger_Request $request) {
+		//var_dump("hello"); exit;
 		$recordId = $request->get('record');
 		$moduleName = $request->getModule();
 		$qualifiedModuleName = $request->getModule(false);

@@ -61,7 +61,7 @@ Class Users_Edit_View extends Users_PreferenceEdit_View {
 		$viewer->assign('MODULE', $moduleName);
 		$viewer->assign('QUALIFIED_MODULE', $qualifiedModuleName);
 		$viewer->assign('IS_PREFERENCE', false);
-
+		
 		$viewer->view('SettingsMenuStart.tpl', $qualifiedModuleName);
 	}
 

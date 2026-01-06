@@ -70,6 +70,7 @@ class Users_Detail_View extends Users_PreferenceDetail_View {
 		$viewer->assign('MODULE', $moduleName);
 		$viewer->assign('QUALIFIED_MODULE', $qualifiedModuleName);
 		$viewer->assign('CURRENT_USER_MODEL', $currentUserModel);
+		//var_dump("here"); exit;
 		$viewer->view('SettingsMenuStart.tpl', $qualifiedModuleName);
 	}
 

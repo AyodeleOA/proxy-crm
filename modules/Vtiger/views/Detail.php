@@ -160,6 +160,7 @@ class Vtiger_Detail_View extends Vtiger_Index_View {
 		$viewer->assign('TAGS_LIST', $tagsList);
 		$viewer->assign('ALL_USER_TAGS', $allUserTags);
 		$appName = $request->get('app');
+		
 		if(!empty($appName)){
 			$viewer->assign('SELECTED_MENU_CATEGORY',$appName);
 		}

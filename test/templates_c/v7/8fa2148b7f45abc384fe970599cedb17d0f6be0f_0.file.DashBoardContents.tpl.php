@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 4.5.4, created on 2025-07-15 09:01:14
+/* Smarty version 4.5.4, created on 2025-07-17 18:30:14
   from 'C:\xampp\htdocs\proxy-crm\layouts\v7\modules\Vtiger\dashboards\DashBoardContents.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.5.4',
-  'unifunc' => 'content_687618da38ca01_65174098',
+  'unifunc' => 'content_68794136270fc9_32092186',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_687618da38ca01_65174098 (Smarty_Internal_Template $_smarty_tpl) {
+function content_68794136270fc9_32092186 (Smarty_Internal_Template $_smarty_tpl) {
 ?>    
 <div class="headerr"><div class="header-background"><img src='<?php echo vresource_url("layouts/v7/lib/newui/css/image/header-banner.png");?>
 ' alt="Header Background" class="header-img" /><div class="header-content"><h1>Welcome, <?php echo $_smarty_tpl->tpl_vars['USER_MODEL']->value->get('user_name');?>

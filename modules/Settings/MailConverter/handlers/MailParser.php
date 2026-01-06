@@ -13,7 +13,8 @@ class Vtiger_MailParser {
 	var $msg = false;
 
 	function __construct($string) {
-		$this->msg = mb_convert_encoding($string, 'HTML-ENTITIES', 'UTF-8');
+		//$this->msg = mb_convert_encoding($string, 'HTML-ENTITIES', 'UTF-8');
+		$this->msg = @mb_convert_encoding($string, 'HTML-ENTITIES', 'UTF-8');
 	}
 
 	/*

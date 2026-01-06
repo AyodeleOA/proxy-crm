@@ -7,6 +7,8 @@
  * Portions created by vtiger are Copyright (C) vtiger.
  * All Rights Reserved.
  ************************************************************************************/
+require_once __DIR__ . '/../../vendor/autoload.php';
+
 
 chdir(dirname(__FILE__) . '/../..');
 include_once 'vtlib/Vtiger/Module.php';

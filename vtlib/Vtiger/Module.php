@@ -186,6 +186,7 @@ class Vtiger_Module extends Vtiger_ModuleBasic {
 	 * @param mixed id or name of the module
 	 */
 	static function getInstance($value) {
+		
 		$instance = Vtiger_Cache::get('module', $value);
 		if (!$instance && $instance !== NULL) {
 			$data = Vtiger_Functions::getModuleData($value);

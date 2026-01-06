@@ -1,0 +1,24 @@
+<?xml version='1.0'?>
+<schema>
+	<tables>
+		<table>
+			<name>vtiger_callcenter</name>
+			<sql><![CDATA[CREATE TABLE `vtiger_callcenter` (
+  `callcenterid` int(11) NOT NULL AUTO_INCREMENT,
+  `callcentername` VARCHAR(255) NOT NULL,
+  `project_no` varchar(100) default NULL,
+  `call_date` date default NULL,
+  `call_status` varchar(255) default NULL,
+  `linktoaccountscontacts` varchar(100) default NULL,
+  PRIMARY KEY (callcenterid)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8]]></sql>
+		</table>
+		<table>
+			<name>vtiger_callcentercf</name>
+			<sql><![CDATA[CREATE TABLE `vtiger_callcentercf` (
+  `callcenterid` int(11) NOT NULL,
+  PRIMARY KEY  (`callcenterid`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8]]></sql>
+		</table>
+	</tables>
+</schema>

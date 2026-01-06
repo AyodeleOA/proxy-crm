@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 4.5.4, created on 2025-07-15 23:01:15
+/* Smarty version 4.5.4, created on 2025-07-17 18:36:43
   from 'C:\xampp\htdocs\proxy-crm\layouts\v7\modules\Vtiger\DetailViewPreProcess.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.5.4',
-  'unifunc' => 'content_6876ddbb9b3257_21943542',
+  'unifunc' => 'content_687942bbf1aa83_24530493',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -22,7 +22,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:modules/Vtiger/partials/SidebarAppMenu.tpl' => 1,
   ),
 ),false)) {
-function content_6876ddbb9b3257_21943542 (Smarty_Internal_Template $_smarty_tpl) {
+function content_687942bbf1aa83_24530493 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_checkPlugins(array(0=>array('file'=>'C:\\xampp\\htdocs\\proxy-crm\\vendor\\smarty\\smarty\\libs\\plugins\\modifier.capitalize.php','function'=>'smarty_modifier_capitalize',),));
 ?>
 

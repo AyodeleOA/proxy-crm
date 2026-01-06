@@ -1,0 +1,117 @@
+Traced on 2025-07-16 16:19:01
+FileAccessForInclusion - 
+C:\xampp\htdocs\proxy-crm\include\utils\CommonUtils.php::checkFileAccessForInclusion::388<br>
+C:\xampp\htdocs\proxy-crm\data\CRMEntity.php::checkFileAccessForInclusion::59<br>
+C:\xampp\htdocs\proxy-crm\include\Webservices\Utils.php::getInstance::224<br>
+C:\xampp\htdocs\proxy-crm\include\Webservices\VtigerCRMObjectMeta.php::vtws_getModuleInstance::44<br>
+C:\xampp\htdocs\proxy-crm\include\Webservices\VtigerModuleOperation.php::__construct::32<br>
+C:\xampp\htdocs\proxy-crm\include\Webservices\VtigerModuleOperation.php::getMetaInstance::20<br>
+C:\xampp\htdocs\proxy-crm\include\Webservices\Utils.php::__construct::472<br>
+C:\xampp\htdocs\proxy-crm\include\QueryGenerator\QueryGenerator.php::vtws_getModuleHandlerFromName::98<br>
+C:\xampp\htdocs\proxy-crm\include\QueryGenerator\QueryGenerator.php::getMeta::74<br>
+C:\xampp\htdocs\proxy-crm\include\QueryGenerator\EnhancedQueryGenerator.php::__construct::16<br>
+C:\xampp\htdocs\proxy-crm\modules\Vtiger\models\ListView.php::__construct::373<br>
+C:\xampp\htdocs\proxy-crm\modules\Vtiger\views\List.php::getInstance::58<br>
+C:\xampp\htdocs\proxy-crm\includes\main\WebUI.php::preProcess::76<br>
+C:\xampp\htdocs\proxy-crm\includes\main\WebUI.php::triggerPreProcess::214<br>
+C:\xampp\htdocs\proxy-crm\index.php::process::32<br>
+
+Traced on 2025-07-16 16:21:03
+FileAccessForInclusion - 
+C:\xampp\htdocs\proxy-crm\include\utils\CommonUtils.php::checkFileAccessForInclusion::388<br>
+C:\xampp\htdocs\proxy-crm\data\CRMEntity.php::checkFileAccessForInclusion::59<br>
+C:\xampp\htdocs\proxy-crm\include\Webservices\Utils.php::getInstance::224<br>
+C:\xampp\htdocs\proxy-crm\include\Webservices\VtigerCRMObjectMeta.php::vtws_getModuleInstance::44<br>
+C:\xampp\htdocs\proxy-crm\include\Webservices\VtigerModuleOperation.php::__construct::32<br>
+C:\xampp\htdocs\proxy-crm\include\Webservices\VtigerModuleOperation.php::getMetaInstance::20<br>
+C:\xampp\htdocs\proxy-crm\include\Webservices\Utils.php::__construct::472<br>
+C:\xampp\htdocs\proxy-crm\include\QueryGenerator\QueryGenerator.php::vtws_getModuleHandlerFromName::98<br>
+C:\xampp\htdocs\proxy-crm\include\QueryGenerator\QueryGenerator.php::getMeta::74<br>
+C:\xampp\htdocs\proxy-crm\include\QueryGenerator\EnhancedQueryGenerator.php::__construct::16<br>
+C:\xampp\htdocs\proxy-crm\modules\Vtiger\models\ListView.php::__construct::373<br>
+C:\xampp\htdocs\proxy-crm\modules\Vtiger\views\List.php::getInstance::58<br>
+C:\xampp\htdocs\proxy-crm\includes\main\WebUI.php::preProcess::76<br>
+C:\xampp\htdocs\proxy-crm\includes\main\WebUI.php::triggerPreProcess::214<br>
+C:\xampp\htdocs\proxy-crm\index.php::process::32<br>
+
+Traced on 2025-07-17 14:51:08
+FileAccessForDeletion - 
+C:\xampp\htdocs\proxy-crm\include\utils\CommonUtils.php::checkFileAccessForDeletion::393<br>
+C:\xampp\htdocs\proxy-crm\modules\Settings\ModuleManager\views\ModuleImport.php::checkFileAccessForDeletion::176<br>
+C:\xampp\htdocs\proxy-crm\includes\runtime\Controller.php::importUserModuleStep2::65<br>
+C:\xampp\htdocs\proxy-crm\modules\Settings\ModuleManager\views\ModuleImport.php::invokeExposedMethod::24<br>
+C:\xampp\htdocs\proxy-crm\includes\main\WebUI.php::process::215<br>
+C:\xampp\htdocs\proxy-crm\index.php::process::32<br>
+
+Traced on 2025-07-17 14:53:06
+FileAccessForDeletion - 
+C:\xampp\htdocs\proxy-crm\include\utils\CommonUtils.php::checkFileAccessForDeletion::393<br>
+C:\xampp\htdocs\proxy-crm\modules\Settings\ModuleManager\views\ModuleImport.php::checkFileAccessForDeletion::176<br>
+C:\xampp\htdocs\proxy-crm\includes\runtime\Controller.php::importUserModuleStep2::65<br>
+C:\xampp\htdocs\proxy-crm\modules\Settings\ModuleManager\views\ModuleImport.php::invokeExposedMethod::24<br>
+C:\xampp\htdocs\proxy-crm\includes\main\WebUI.php::process::215<br>
+C:\xampp\htdocs\proxy-crm\index.php::process::32<br>
+
+Traced on 2025-07-17 14:53:22
+FileAccessForDeletion - 
+C:\xampp\htdocs\proxy-crm\include\utils\CommonUtils.php::checkFileAccessForDeletion::393<br>
+C:\xampp\htdocs\proxy-crm\modules\Settings\ModuleManager\views\ModuleImport.php::checkFileAccessForDeletion::176<br>
+C:\xampp\htdocs\proxy-crm\includes\runtime\Controller.php::importUserModuleStep2::65<br>
+C:\xampp\htdocs\proxy-crm\modules\Settings\ModuleManager\views\ModuleImport.php::invokeExposedMethod::24<br>
+C:\xampp\htdocs\proxy-crm\includes\main\WebUI.php::process::215<br>
+C:\xampp\htdocs\proxy-crm\index.php::process::32<br>
+
+Traced on 2025-07-17 14:54:21
+FileAccessForDeletion - 
+C:\xampp\htdocs\proxy-crm\include\utils\CommonUtils.php::checkFileAccessForDeletion::393<br>
+C:\xampp\htdocs\proxy-crm\modules\Settings\ModuleManager\views\ModuleImport.php::checkFileAccessForDeletion::176<br>
+C:\xampp\htdocs\proxy-crm\includes\runtime\Controller.php::importUserModuleStep2::65<br>
+C:\xampp\htdocs\proxy-crm\modules\Settings\ModuleManager\views\ModuleImport.php::invokeExposedMethod::24<br>
+C:\xampp\htdocs\proxy-crm\includes\main\WebUI.php::process::215<br>
+C:\xampp\htdocs\proxy-crm\index.php::process::32<br>
+
+Traced on 2025-07-17 14:55:28
+FileAccessForDeletion - 
+C:\xampp\htdocs\proxy-crm\include\utils\CommonUtils.php::checkFileAccessForDeletion::393<br>
+C:\xampp\htdocs\proxy-crm\modules\Settings\ModuleManager\views\ModuleImport.php::checkFileAccessForDeletion::176<br>
+C:\xampp\htdocs\proxy-crm\includes\runtime\Controller.php::importUserModuleStep2::65<br>
+C:\xampp\htdocs\proxy-crm\modules\Settings\ModuleManager\views\ModuleImport.php::invokeExposedMethod::24<br>
+C:\xampp\htdocs\proxy-crm\includes\main\WebUI.php::process::215<br>
+C:\xampp\htdocs\proxy-crm\index.php::process::32<br>
+
+Traced on 2025-07-17 14:56:04
+FileAccessForDeletion - 
+C:\xampp\htdocs\proxy-crm\include\utils\CommonUtils.php::checkFileAccessForDeletion::393<br>
+C:\xampp\htdocs\proxy-crm\modules\Settings\ModuleManager\views\ModuleImport.php::checkFileAccessForDeletion::176<br>
+C:\xampp\htdocs\proxy-crm\includes\runtime\Controller.php::importUserModuleStep2::65<br>
+C:\xampp\htdocs\proxy-crm\modules\Settings\ModuleManager\views\ModuleImport.php::invokeExposedMethod::24<br>
+C:\xampp\htdocs\proxy-crm\includes\main\WebUI.php::process::215<br>
+C:\xampp\htdocs\proxy-crm\index.php::process::32<br>
+
+Traced on 2025-07-17 14:58:14
+FileAccessForDeletion - 
+C:\xampp\htdocs\proxy-crm\include\utils\CommonUtils.php::checkFileAccessForDeletion::393<br>
+C:\xampp\htdocs\proxy-crm\modules\Settings\ModuleManager\views\ModuleImport.php::checkFileAccessForDeletion::176<br>
+C:\xampp\htdocs\proxy-crm\includes\runtime\Controller.php::importUserModuleStep2::65<br>
+C:\xampp\htdocs\proxy-crm\modules\Settings\ModuleManager\views\ModuleImport.php::invokeExposedMethod::24<br>
+C:\xampp\htdocs\proxy-crm\includes\main\WebUI.php::process::215<br>
+C:\xampp\htdocs\proxy-crm\index.php::process::32<br>
+
+Traced on 2025-10-16 08:57:08
+FileAccessForInclusion - 
+C:\xampp\htdocs\proxy-crm\include\utils\CommonUtils.php::checkFileAccessForInclusion::388<br>
+C:\xampp\htdocs\proxy-crm\data\CRMEntity.php::checkFileAccessForInclusion::59<br>
+C:\xampp\htdocs\proxy-crm\include\Webservices\Utils.php::getInstance::224<br>
+C:\xampp\htdocs\proxy-crm\include\Webservices\VtigerCRMObjectMeta.php::vtws_getModuleInstance::44<br>
+C:\xampp\htdocs\proxy-crm\include\Webservices\VtigerModuleOperation.php::__construct::32<br>
+C:\xampp\htdocs\proxy-crm\include\Webservices\VtigerModuleOperation.php::getMetaInstance::20<br>
+C:\xampp\htdocs\proxy-crm\include\Webservices\Utils.php::__construct::472<br>
+C:\xampp\htdocs\proxy-crm\include\QueryGenerator\QueryGenerator.php::vtws_getModuleHandlerFromName::98<br>
+C:\xampp\htdocs\proxy-crm\include\QueryGenerator\QueryGenerator.php::getMeta::74<br>
+C:\xampp\htdocs\proxy-crm\include\QueryGenerator\EnhancedQueryGenerator.php::__construct::16<br>
+C:\xampp\htdocs\proxy-crm\modules\Vtiger\models\ListView.php::__construct::395<br>
+C:\xampp\htdocs\proxy-crm\modules\Vtiger\views\List.php::getInstance::59<br>
+C:\xampp\htdocs\proxy-crm\includes\main\WebUI.php::preProcess::76<br>
+C:\xampp\htdocs\proxy-crm\includes\main\WebUI.php::triggerPreProcess::214<br>
+C:\xampp\htdocs\proxy-crm\index.php::process::28<br>
+

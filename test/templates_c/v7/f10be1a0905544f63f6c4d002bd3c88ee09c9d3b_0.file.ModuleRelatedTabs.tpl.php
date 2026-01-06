@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 4.5.4, created on 2025-07-15 12:29:22
+/* Smarty version 4.5.4, created on 2025-07-17 18:36:44
   from 'C:\xampp\htdocs\proxy-crm\layouts\v7\modules\Vtiger\ModuleRelatedTabs.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.5.4',
-  'unifunc' => 'content_687649a261d052_99010589',
+  'unifunc' => 'content_687942bc1da316_56449098',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_687649a261d052_99010589 (Smarty_Internal_Template $_smarty_tpl) {
+function content_687942bc1da316_56449098 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_checkPlugins(array(0=>array('file'=>'C:\\xampp\\htdocs\\proxy-crm\\vendor\\smarty\\smarty\\libs\\plugins\\modifier.count.php','function'=>'smarty_modifier_count',),));
 ?>
 
@@ -33,8 +33,8 @@ $_smarty_tpl->_assignInScope('RELATEDLINK_URL', $_smarty_tpl->tpl_vars['RELATED_
 $_smarty_tpl->_assignInScope('RELATEDLINK_LABEL', $_smarty_tpl->tpl_vars['RELATED_LINK']->value->getLabel());
 ob_start();
 echo vtranslate(('SINGLE_').($_smarty_tpl->tpl_vars['MODULE_NAME']->value),$_smarty_tpl->tpl_vars['MODULE_NAME']->value);
-$_prefixVariable7 = ob_get_clean();
-$_smarty_tpl->_assignInScope('RELATED_TAB_LABEL', (($_prefixVariable7).(" ")).($_smarty_tpl->tpl_vars['RELATEDLINK_LABEL']->value));?><li class="tab-item <?php if ($_smarty_tpl->tpl_vars['RELATED_TAB_LABEL']->value == $_smarty_tpl->tpl_vars['SELECTED_TAB_LABEL']->value) {?>active<?php }?>" data-url="<?php echo $_smarty_tpl->tpl_vars['RELATEDLINK_URL']->value;?>
+$_prefixVariable5 = ob_get_clean();
+$_smarty_tpl->_assignInScope('RELATED_TAB_LABEL', (($_prefixVariable5).(" ")).($_smarty_tpl->tpl_vars['RELATEDLINK_LABEL']->value));?><li class="tab-item <?php if ($_smarty_tpl->tpl_vars['RELATED_TAB_LABEL']->value == $_smarty_tpl->tpl_vars['SELECTED_TAB_LABEL']->value) {?>active<?php }?>" data-url="<?php echo $_smarty_tpl->tpl_vars['RELATEDLINK_URL']->value;?>
 &tab_label=<?php echo $_smarty_tpl->tpl_vars['RELATED_TAB_LABEL']->value;?>
 &app=<?php echo $_smarty_tpl->tpl_vars['SELECTED_MENU_CATEGORY']->value;?>
 " data-label-key="<?php echo $_smarty_tpl->tpl_vars['RELATEDLINK_LABEL']->value;?>
@@ -44,8 +44,8 @@ $_smarty_tpl->_assignInScope('RELATED_TAB_LABEL', (($_prefixVariable7).(" ")).($
 &app=<?php echo $_smarty_tpl->tpl_vars['SELECTED_MENU_CATEGORY']->value;?>
 " class="textOverflowEllipsis"><span class="tab-label"><strong><?php ob_start();
 echo $_smarty_tpl->tpl_vars['MODULE_NAME']->value;
-$_prefixVariable8 = ob_get_clean();
-echo vtranslate($_smarty_tpl->tpl_vars['RELATEDLINK_LABEL']->value,$_prefixVariable8);?>
+$_prefixVariable6 = ob_get_clean();
+echo vtranslate($_smarty_tpl->tpl_vars['RELATEDLINK_LABEL']->value,$_prefixVariable6);?>
 </strong></span></a></li><?php
 }
 $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);
@@ -83,8 +83,8 @@ $_smarty_tpl->_assignInScope('DETAILVIEWRELATEDLINKLBL', vtranslate($_smarty_tpl
 echo $_smarty_tpl->tpl_vars['RELATED_MODULE_MODEL']->value->getModuleIcon();?>
 </span><?php }?>&nbsp;<span class="numberCircle hide">0</span></a></li><?php ob_start();
 echo $_smarty_tpl->tpl_vars['REQ']->value->get('relationId');
-$_prefixVariable9 = ob_get_clean();
-if (($_smarty_tpl->tpl_vars['RELATED_LINK']->value->getId() == $_prefixVariable9)) {
+$_prefixVariable7 = ob_get_clean();
+if (($_smarty_tpl->tpl_vars['RELATED_LINK']->value->getId() == $_prefixVariable7)) {
 $_smarty_tpl->_assignInScope('MORE_TAB_ACTIVE', 'true');
 }
 }
@@ -97,8 +97,8 @@ $_smarty_tpl->tpl_vars['i']->first = $_smarty_tpl->tpl_vars['i']->iteration === 
 $_smarty_tpl->_assignInScope('RELATED_LINK', $_smarty_tpl->tpl_vars['RELATEDTABS']->value[$_smarty_tpl->tpl_vars['i']->value]);
 ob_start();
 echo $_smarty_tpl->tpl_vars['REQ']->value->get('relationId');
-$_prefixVariable10 = ob_get_clean();
-if (($_smarty_tpl->tpl_vars['RELATED_LINK']->value->getId() == $_prefixVariable10)) {
+$_prefixVariable8 = ob_get_clean();
+if (($_smarty_tpl->tpl_vars['RELATED_LINK']->value->getId() == $_prefixVariable8)) {
 $_smarty_tpl->_assignInScope('RELATEDMODULENAME', $_smarty_tpl->tpl_vars['RELATED_LINK']->value->getRelatedModuleName());
 $_smarty_tpl->_assignInScope('RELATEDFIELDNAME', $_smarty_tpl->tpl_vars['RELATED_LINK']->value->get('linkFieldName'));
 $_smarty_tpl->_assignInScope('DETAILVIEWRELATEDLINKLBL', vtranslate($_smarty_tpl->tpl_vars['RELATED_LINK']->value->getLabel(),$_smarty_tpl->tpl_vars['RELATEDMODULENAME']->value));?><li class="more-tab moreTabElement active" data-url="<?php echo $_smarty_tpl->tpl_vars['RELATED_LINK']->value->getUrl();?>

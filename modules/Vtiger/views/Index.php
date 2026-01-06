@@ -26,6 +26,7 @@ class Vtiger_Index_View extends Vtiger_Basic_View {
 		$viewer = $this->getViewer($request);
 
 		$moduleName = $request->getModule();
+		
 		if(!empty($moduleName)) {
 			$moduleModel = Vtiger_Module_Model::getInstance($moduleName);
 			$viewer->assign('MODULE', $moduleName);
@@ -35,6 +36,8 @@ class Vtiger_Index_View extends Vtiger_Basic_View {
 			$viewer->assign('QUICK_LINKS', $linkModels);
 			$this->setModuleInfo($request,$moduleModel);
 		}
+		
+		//var_dump($request->get('view')); exit;
 
 		$viewer->assign('CURRENT_USER_MODEL', Users_Record_Model::getCurrentUserModel());
 		$viewer->assign('REQUEST_INSTANCE', $request);

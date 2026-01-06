@@ -351,6 +351,7 @@ class QueryGenerator {
 		if(empty($this->query)) {
 			$conditionedReferenceFields = array();
 			$allFields = array_merge($this->fields, (array)$this->whereFields);
+			//var_dump($allFields);
 			foreach ($allFields as $fieldName) {
 				if(in_array($fieldName,$this->referenceFieldList)) {
 					$moduleList = $this->referenceFieldInfoList[$fieldName];
@@ -1570,6 +1571,7 @@ class QueryGenerator {
 			$this->startGroup(self::$AND);
 		}
 		$nameFieldList = explode(',',$this->getModuleNameFields($this->module));
+		var_dump($nameFieldList);
 		foreach ($nameFieldList as $nameList) {
 			$field = $this->meta->getFieldByColumnName($nameList);
 			$this->fields[] = $field->getFieldName();

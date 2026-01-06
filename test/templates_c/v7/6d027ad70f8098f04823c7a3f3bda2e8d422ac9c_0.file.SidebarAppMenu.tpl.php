@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 4.5.4, created on 2025-07-15 10:40:55
+/* Smarty version 4.5.4, created on 2025-07-17 17:17:05
   from 'C:\xampp\htdocs\proxy-crm\layouts\v7\modules\Vtiger\partials\SidebarAppMenu.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.5.4',
-  'unifunc' => 'content_687630374457b7_78715162',
+  'unifunc' => 'content_687930111de173_11080710',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_687630374457b7_78715162 (Smarty_Internal_Template $_smarty_tpl) {
+function content_687930111de173_11080710 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 					<!-- Sidebar -->
 					<aside class="sidebar hide-on-mobile">
@@ -391,8 +391,8 @@ $_smarty_tpl->tpl_vars['moduleModel']->do_else = false;
 													<?php $_smarty_tpl->_assignInScope('singularLabel', $_smarty_tpl->tpl_vars['moduleModel']->value->getSingularLabelKey());?>
 													<?php ob_start();
 echo !$_smarty_tpl->tpl_vars['moduleModel']->value->isPermitted('CreateView') && $_smarty_tpl->tpl_vars['moduleModel']->value->isPermitted('EditView');
-$_prefixVariable1 = ob_get_clean();
-$_smarty_tpl->_assignInScope('hideDiv', $_prefixVariable1);?>
+$_prefixVariable3 = ob_get_clean();
+$_smarty_tpl->_assignInScope('hideDiv', $_prefixVariable3);?>
 													<?php if ($_smarty_tpl->tpl_vars['quickCreateModule']->value == '1') {?>
 														<?php if ($_smarty_tpl->tpl_vars['count']->value%3 == 0) {?>
 															<div class="row">
@@ -449,8 +449,8 @@ $_smarty_tpl->_assignInScope('hideDiv', $_prefixVariable1);?>
 																				<img style="  margin-top: -3px;margin-right: 4%;" title="Vtiger" alt="Vtiger" src="layouts/v7/skins//images/Vtiger.png">
 																				<?php ob_start();
 echo vtranslate('LBL_VTIGER',$_smarty_tpl->tpl_vars['moduleName']->value);
-$_prefixVariable2 = ob_get_clean();
-echo vtranslate('LBL_TO_SERVICE',$_smarty_tpl->tpl_vars['moduleName']->value,$_prefixVariable2);?>
+$_prefixVariable4 = ob_get_clean();
+echo vtranslate('LBL_TO_SERVICE',$_smarty_tpl->tpl_vars['moduleName']->value,$_prefixVariable4);?>
 
 																			</a>
 																		</li>
@@ -458,14 +458,14 @@ echo vtranslate('LBL_TO_SERVICE',$_smarty_tpl->tpl_vars['moduleName']->value,$_p
 </li>
 																		<li id="shareDocument"><a href="javascript:Documents_Index_Js.createDocument('E')">&nbsp;<i class="fa fa-external-link"></i>&nbsp;&nbsp; <?php ob_start();
 echo vtranslate('LBL_FILE_URL',$_smarty_tpl->tpl_vars['moduleName']->value);
-$_prefixVariable3 = ob_get_clean();
-echo vtranslate('LBL_FROM_SERVICE',$_smarty_tpl->tpl_vars['moduleName']->value,$_prefixVariable3);?>
+$_prefixVariable5 = ob_get_clean();
+echo vtranslate('LBL_FROM_SERVICE',$_smarty_tpl->tpl_vars['moduleName']->value,$_prefixVariable5);?>
 </a></li>
 																		<li role="separator" class="divider"></li>
 																		<li id="createDocument"><a href="javascript:Documents_Index_Js.createDocument('W')"><i class="fa fa-file-text"></i> <?php ob_start();
 echo vtranslate('SINGLE_Documents',$_smarty_tpl->tpl_vars['moduleName']->value);
-$_prefixVariable4 = ob_get_clean();
-echo vtranslate('LBL_CREATE_NEW',$_smarty_tpl->tpl_vars['moduleName']->value,$_prefixVariable4);?>
+$_prefixVariable6 = ob_get_clean();
+echo vtranslate('LBL_CREATE_NEW',$_smarty_tpl->tpl_vars['moduleName']->value,$_prefixVariable6);?>
 </a></li>
 																	</ul>
 																</div>

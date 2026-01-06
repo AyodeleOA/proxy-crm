@@ -32,7 +32,7 @@ $USE_RTE = 'true';
 
 // helpdesk support email id and support name (Example: 'support@vtiger.com' and 'vtiger support')
 $HELPDESK_SUPPORT_EMAIL_ID = 'ayodelea@proxynetgroup.com';
-$HELPDESK_SUPPORT_NAME = 'your-support name';
+$HELPDESK_SUPPORT_NAME = 'Proxynet';
 $HELPDESK_SUPPORT_EMAIL_REPLY_ID = $HELPDESK_SUPPORT_EMAIL_ID;
 
 /* database configuration
@@ -79,7 +79,7 @@ $dbconfigoption['ssl'] = false;
 
 $host_name = $dbconfig['db_hostname'];
 
-$site_URL = 'http://localhost/proxy-crm/';//'https://proxycrm.attainables.net/';
+$site_URL = 'http://localhost/proxy-crm/';//'http://localhost/proxy-crm/';//'https://proxycrm.attainables.net/';
 
 // url for customer portal (Example: http://vtiger.com/portal)
 $PORTAL_URL = $site_URL.'/customerportal';

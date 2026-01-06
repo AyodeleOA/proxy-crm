@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 4.5.4, created on 2025-07-15 09:01:18
+/* Smarty version 4.5.4, created on 2025-07-17 18:30:48
   from 'C:\xampp\htdocs\proxy-crm\layouts\v7\modules\Potentials\dashboards\TopPotentialsContents.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.5.4',
-  'unifunc' => 'content_687618de468331_79032130',
+  'unifunc' => 'content_68794158981e95_18716710',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_687618de468331_79032130 (Smarty_Internal_Template $_smarty_tpl) {
+function content_68794158981e95_18716710 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div style='padding:5px'>
 <?php if (php7_count($_smarty_tpl->tpl_vars['MODELS']->value) > 0) {?>
 	<div>

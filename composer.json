@@ -22,9 +22,10 @@
         "dg/rss-php": "^1.5",
         "ezyang/htmlpurifier": "^4.16",
         "tecnickcom/tcpdf": "^6.6",
-	"monolog/monolog": "^3.5",
+	"monolog/monolog": "^3.9",
         "league/oauth2-client": "^2.7",
         "phpmailer/phpmailer": "^6.9",
-        "league/oauth2-google": "^4.0"
+        "league/oauth2-google": "^4.0",
+        "minishlink/web-push": "*"
     }
 }

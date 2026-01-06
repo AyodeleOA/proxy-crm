@@ -8,7 +8,7 @@
  * All Rights Reserved.
  *************************************************************************************/
 
-class Project_Detail_View extends Vtiger_Detail_View {
+class CallCenter_Detail_View extends Vtiger_Detail_View {
 	
 	function __construct() {
 		parent::__construct();

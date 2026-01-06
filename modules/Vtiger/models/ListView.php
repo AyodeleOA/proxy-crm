@@ -32,6 +32,7 @@ class Vtiger_ListView_Model extends Vtiger_Base_Model {
 		$linkTypes = array('SIDEBARLINK', 'SIDEBARWIDGET');
 		$moduleLinks = $this->getModule()->getSideBarLinks($linkParams);
 
+		
 		$listLinkTypes = array('LISTVIEWSIDEBARLINK', 'LISTVIEWSIDEBARWIDGET');
 		$listLinks = Vtiger_Link_Model::getAllByType($this->getModule()->getId(), $listLinkTypes);
 
@@ -139,9 +140,12 @@ class Vtiger_ListView_Model extends Vtiger_Base_Model {
 	 */
 	public function getListViewHeaders() {
 		$listViewContoller = $this->get('listview_controller');
+		
 		$module = $this->getModule();
+		//var_dump($module);
 		$headerFieldModels = array();
 		$headerFields = $listViewContoller->getListViewHeaderFields();
+		//var_dump($listViewContoller); exit;
 		foreach($headerFields as $fieldName => $webserviceField) {
 			if($webserviceField && !in_array($webserviceField->getPresence(), array(0,2))) continue;
 			if($webserviceField && isset($webserviceField->parentReferenceField) && !in_array($webserviceField->parentReferenceField->getPresence(), array(0,2))){
@@ -171,6 +175,7 @@ class Vtiger_ListView_Model extends Vtiger_Base_Model {
 				$headerFieldModels[$fieldName] = $fieldInstance;
 			}
 		}
+		//var_dump($headerFieldModels);
 		return $headerFieldModels;
 	}
 
@@ -185,11 +190,13 @@ class Vtiger_ListView_Model extends Vtiger_Base_Model {
 		$moduleName = $this->getModule()->get('name');
 		$moduleFocus = CRMEntity::getInstance($moduleName);
 		$moduleModel = Vtiger_Module_Model::getInstance($moduleName);
+		//var_dump($moduleName);
 
 		$queryGenerator = $this->get('query_generator');
 		$listViewContoller = $this->get('listview_controller');
-
-		 $searchParams = $this->get('search_params');
+		
+		
+	    $searchParams = $this->get('search_params');
 		if(empty($searchParams)) {
 			$searchParams = array();
 		}
@@ -197,6 +204,13 @@ class Vtiger_ListView_Model extends Vtiger_Base_Model {
 		if(php7_count($queryGenerator->getWhereFields()) > 0 && (php7_count($searchParams)) > 0) {
 			$glue = QueryGenerator::$AND;
 		}
+		
+		//var_dump($moduleName);
+		
+		if($moduleName=="PhoneExtensions"){
+			$queryGenerator->setFields(['extensionid', 'extensionlabel','name', 'staff_id']);
+		}
+
 		$queryGenerator->parseAdvFilterList($searchParams, $glue);
 
 		$searchKey = $this->get('search_key');
@@ -219,6 +233,8 @@ class Vtiger_ListView_Model extends Vtiger_Base_Model {
 			}
 		}
 		$listQuery = $this->getQuery();
+		
+		//var_dump($listQuery);
 
 		$sourceModule = $this->get('src_module');
 		if(!empty($sourceModule)) {
@@ -255,13 +271,16 @@ class Vtiger_ListView_Model extends Vtiger_Base_Model {
 		$_SESSION['lvs'][$moduleName][$viewid]['start'] = $pagingModel->get('page');
 
 		ListViewSession::setSessionQuery($moduleName, $listQuery, $viewid);
+		
 
 		$listQuery .= " LIMIT $startIndex,".($pageLimit+1);
 		
 		$listResult = $db->pquery($listQuery, array());
+		//var_dump($listResult);
 
 		$listViewRecordModels = array();
 		$listViewEntries =  $listViewContoller->getListViewRecords($moduleFocus,$moduleName, $listResult);
+		//var_dump($listViewEntries);
 
 		$pagingModel->calculatePageRange($listViewEntries);
 
@@ -278,6 +297,7 @@ class Vtiger_ListView_Model extends Vtiger_Base_Model {
 			$record['id'] = $recordId;
 			$listViewRecordModels[$recordId] = $moduleModel->getRecordFromArray($record, $rawData);
 		}
+		//var_dump($listViewEntries);
 		return $listViewRecordModels;
 	}
 
@@ -349,11 +369,13 @@ class Vtiger_ListView_Model extends Vtiger_Base_Model {
 		}
 
 		$listResult = $db->pquery($listQuery, array());
+		
 		return $db->query_result($listResult, 0, 'count');
 	}
 
 	function getQuery() {
 		$queryGenerator = $this->get('query_generator');
+		
 		$listQuery = $queryGenerator->getQuery();
 		return $listQuery;
 	}

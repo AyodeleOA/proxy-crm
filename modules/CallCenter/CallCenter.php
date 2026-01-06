@@ -10,7 +10,7 @@
 class CallCenter extends CRMEntity {
     var $db, $log; // Used in class functions of CRMEntity
 
-    var $table_name = 'vtiger_project';
+    var $table_name = 'vtiger_callcenter';
     var $table_index= 'projectid';
     var $column_fields = Array();
 

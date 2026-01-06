@@ -32,6 +32,7 @@ class Vtiger_List_View extends Vtiger_Index_View {
 		parent::preProcess($request, false);
 
 		$moduleName = $request->getModule();
+		
 		$customView = new CustomView();
 		if($customView->isPermittedCustomView($request->get('viewname'), 'List', $moduleName) != 'yes') {
 			$viewName = $customView->getViewIdByName('All', $moduleName);
@@ -78,7 +79,8 @@ class Vtiger_List_View extends Vtiger_Index_View {
 		$viewer->assign('VIEWID', $this->viewName);
 		$moduleModel = Vtiger_Module_Model::getInstance($moduleName);
 		$viewer->assign('MODULE_MODEL', $moduleModel);
-
+		
+		//var_dump("here"); exit;
 		if($display) {
 			$this->preProcessDisplay($request);
 		}
@@ -448,6 +450,7 @@ class Vtiger_List_View extends Vtiger_Index_View {
 
 	protected function assignCustomViews(Vtiger_Request $request, Vtiger_Viewer $viewer) {
 		$allCustomViews = CustomView_Record_Model::getAllByGroup($request->getModule());
+		//var_dump($allCustomViews); exit;
 		if (!empty($allCustomViews)) {
 			$viewer->assign('CUSTOM_VIEWS', $allCustomViews);
 			$currentCVSelectedFields = array();

@@ -15,6 +15,8 @@ $languageStrings = array(
 	'LBL_READ_LICENSE' => 'Read License',
 	'LBL_PRIVACY_POLICY' => 'Privacy Policy',
 	'LBL_CALL CENTER' => 'CALL CENTER',
+	'LBL_PHONE_EXTENSIONS' => 'Phone Extensions',
+
 	// Common Actions
 	'LBL_NEW' => 'New',
 	'LBL_LINKED' => 'Linked',

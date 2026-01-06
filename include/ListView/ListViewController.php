@@ -123,8 +123,14 @@ class ListViewController {
 
 	public function getListViewHeaderFields() {
 		$meta = $this->queryGenerator->getMeta($this->queryGenerator->getModule());
+		
 		$moduleFields = $this->queryGenerator->getModuleFields();
 		$fields = $this->queryGenerator->getFields(); 
+		if($this->queryGenerator->getModule()=="PhoneExtensions"){
+			$fields = ['extensionid','extensionlabel','name','staff_id'];
+		}
+		
+		//var_dump($moduleFields);
 		$headerFields = array();
 		foreach($fields as $fieldName) {
 			if(is_array($moduleFields) && array_key_exists($fieldName, $moduleFields)) {
@@ -139,6 +145,8 @@ class ListViewController {
 
 		require('user_privileges/user_privileges_'.$this->user->id.'.php');
 		$fields = $this->queryGenerator->getFields();
+
+		//var_dump($this->queryGenerator->getModule());
 		$meta = $this->queryGenerator->getMeta($this->queryGenerator->getModule());
 		$baseModule = $module;
 		$moduleFields = $this->queryGenerator->getModuleFields();

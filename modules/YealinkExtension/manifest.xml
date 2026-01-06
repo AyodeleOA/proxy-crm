@@ -1,0 +1,27 @@
+<module>
+  <name>YealinkExtension</name>
+  <label>Yealink Extension</label>
+  <parent>CallCenter</parent>
+  <version>1.0</version>
+  <type>entity</type>
+  <entityfield>
+    <fieldname>extension_number</fieldname>
+    <fieldlabel>Extension Number</fieldlabel>
+  </entityfield>
+  <field>
+    <fieldname>extension_number</fieldname>
+    <label>Extension Number</label>
+    <uitype>1</uitype>
+    <columnname>extension_number</columnname>
+    <columntype>varchar(20)</columntype>
+    <typeofdata>V~M</typeofdata>
+  </field>
+  <field>
+    <fieldname>name</fieldname>
+    <label>Name</label>
+    <uitype>1</uitype>
+    <columnname>name</columnname>
+    <columntype>varchar(100)</columntype>
+    <typeofdata>V~O</typeofdata>
+  </field>
+</module>

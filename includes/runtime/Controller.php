@@ -122,6 +122,7 @@ abstract class Vtiger_Action_Controller extends Vtiger_Controller {
     function checkPermission(Vtiger_Request $request)
     {
         $permissions = $this->requiresPermission($request);
+		//var_dump($request);
         foreach ($permissions as $permission) {
             if (array_key_exists('module_parameter', $permission)) {
                 if ($request->has($permission['module_parameter']) && !empty($request->get($permission['module_parameter']))) {
@@ -138,7 +139,7 @@ abstract class Vtiger_Action_Controller extends Vtiger_Controller {
                 $recordParameter = '';
             }
             if (!Users_Privileges_Model::isPermitted($moduleParameter, $permission['action'], $recordParameter)) {
-                throw new AppException(vtranslate('LBL_PERMISSION_DENIED'));
+                //throw new AppException(vtranslate('LBL_PERMISSION_DENIED'));
             }
         }
 

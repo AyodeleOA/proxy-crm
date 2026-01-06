@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 4.5.4, created on 2025-07-15 12:29:22
+/* Smarty version 4.5.4, created on 2025-07-17 18:36:44
   from 'C:\xampp\htdocs\proxy-crm\layouts\v7\modules\Vtiger\DetailViewTagList.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.5.4',
-  'unifunc' => 'content_687649a25b1248_23792623',
+  'unifunc' => 'content_687942bc18a6e9_98216663',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_687649a25b1248_23792623 (Smarty_Internal_Template $_smarty_tpl) {
+function content_687942bc18a6e9_98216663 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div class="tagContainer">
     <div class="tag-contents <?php if (empty($_smarty_tpl->tpl_vars['TAGS_LIST']->value)) {?> hide<?php }?>">
         <div class="detailTagList" data-num-of-tags-to-show="<?php echo Vtiger_Tag_Model::NUM_OF_TAGS_DETAIL;?>
@@ -64,8 +64,8 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
             <div class="modal-content" style="min-height:200px">
                 <?php ob_start();
 echo vtranslate('LBL_TAG_FOR',$_smarty_tpl->tpl_vars['MODULE']->value,$_smarty_tpl->tpl_vars['RECORD']->value->getName());
-$_prefixVariable6=ob_get_clean();
-$_smarty_tpl->_assignInScope('TITLE', $_prefixVariable6);?>
+$_prefixVariable4=ob_get_clean();
+$_smarty_tpl->_assignInScope('TITLE', $_prefixVariable4);?>
                 <?php $_smarty_tpl->_subTemplateRender(call_user_func_array($_smarty_tpl->registered_plugins[ 'modifier' ][ 'vtemplate_path' ][ 0 ], array( "ModalHeader.tpl",$_smarty_tpl->tpl_vars['MODULE']->value )), $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, true);
 ?>
                 <div class="modal-body detailShowAllModal">

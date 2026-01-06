@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 4.5.4, created on 2025-07-15 09:01:20
+/* Smarty version 4.5.4, created on 2025-07-17 18:30:49
   from 'C:\xampp\htdocs\proxy-crm\layouts\v7\modules\ExtensionStore\Promotions.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.5.4',
-  'unifunc' => 'content_687618e0a1a5a9_43255737',
+  'unifunc' => 'content_68794159c756a6_05074573',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_687618e0a1a5a9_43255737 (Smarty_Internal_Template $_smarty_tpl) {
+function content_68794159c756a6_05074573 (Smarty_Internal_Template $_smarty_tpl) {
 $_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['HEADER_SCRIPTS']->value, 'SCRIPT');
 $_smarty_tpl->tpl_vars['SCRIPT']->do_else = true;
 if ($_from !== null) foreach ($_from as $_smarty_tpl->tpl_vars['SCRIPT']->value) {

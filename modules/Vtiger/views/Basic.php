@@ -71,7 +71,10 @@ abstract class Vtiger_Basic_View extends Vtiger_Footer_View {
 			$selectedMenuCategoryLabel = vtranslate($selectedModule, $selectedModule);
 		}
 
-		$viewer->assign('SELECTED_MENU_CATEGORY',$selectedModuleMenuCategory);
+		//str_ireplace()
+		$selectedModuleMenuCategory2 = str_replace(" ","",$selectedModuleMenuCategory);
+		//var_dump($selectedModuleMenuCategory); exit;
+		$viewer->assign('SELECTED_MENU_CATEGORY',$selectedModuleMenuCategory2);
 		$viewer->assign('SELECTED_MENU_CATEGORY_LABEL', $selectedMenuCategoryLabel);
 		$viewer->assign('SELECTED_CATEGORY_MENU_LIST',$menuGroupedByParent[$selectedModuleMenuCategory]);
 		$viewer->assign('MENUS', $menuModelsList);

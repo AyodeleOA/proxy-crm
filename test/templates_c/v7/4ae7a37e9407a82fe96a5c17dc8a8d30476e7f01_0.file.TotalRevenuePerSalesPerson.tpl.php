@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 4.5.4, created on 2025-07-15 09:01:16
+/* Smarty version 4.5.4, created on 2025-07-17 18:30:45
   from 'C:\xampp\htdocs\proxy-crm\layouts\v7\modules\Potentials\dashboards\TotalRevenuePerSalesPerson.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.5.4',
-  'unifunc' => 'content_687618dc77bc93_02288701',
+  'unifunc' => 'content_68794155cc5b13_86546056',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_687618dc77bc93_02288701 (Smarty_Internal_Template $_smarty_tpl) {
+function content_68794155cc5b13_86546056 (Smarty_Internal_Template $_smarty_tpl) {
 echo '<script'; ?>
  type="text/javascript">
 	Vtiger_Pie_Widget_Js('Vtiger_TotalRevenuePerSalesPerson_Widget_Js',{},{});
